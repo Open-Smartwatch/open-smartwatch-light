@@ -1,6 +1,23 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
 # open-Smartwatch_GC9A01_IPS_display
 #
 DEF open-Smartwatch_GC9A01_IPS_display U 0 15 Y Y 1 F N
@@ -9,7 +26,7 @@ F1 "open-Smartwatch_GC9A01_IPS_display" 400 450 50 H V C CNN
 F2 "open-Smartwatch:GC9A01_IPS_display" 0 -950 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-S -350 400 350 -400 0 1 0 f
+S -350 400 350 -400 0 1 8 f
 X GND 1 -100 -500 100 U 50 50 0 0 w
 X SDA 10 -450 300 100 R 50 50 0 0 B
 X ~RESET 11 450 0 100 L 50 50 0 0 I
@@ -33,7 +50,7 @@ F1 "open-Smartwatch_Quectel_L96" 450 850 50 H V C CNN
 F2 "open-Smartwatch:Quectel_L96" -250 -500 50 H I C CNN
 F3 "" -250 -500 50 H I C CNN
 DRAW
-S -700 800 700 -800 0 1 0 f
+S -700 800 700 -800 0 1 12 f
 X NC1 1 700 -450 100 L 50 50 0 0 N
 X GND3 10 -450 -900 100 U 50 50 0 0 w
 X GND4 11 -350 -900 100 U 50 50 0 0 w
@@ -68,15 +85,56 @@ X VCC 9 -200 900 100 D 50 50 0 0 I
 ENDDRAW
 ENDDEF
 #
+# open-Smartwatch_SD_ebay-uSD-push_push_SMD
+#
+DEF open-Smartwatch_SD_ebay-uSD-push_push_SMD XS 0 20 Y Y 1 F N
+F0 "XS" 225 -575 50 H V C CNN
+F1 "open-Smartwatch_SD_ebay-uSD-push_push_SMD" -325 0 50 V V C CNN
+F2 "Connectors:Conn_uSDcard" 0 0 10 H I C CNN
+F3 "_" 0 0 10 H I C CNN
+F4 "_" 0 0 10 H I C CNN "Manf#"
+F5 "ebay" 0 0 10 H I C CNN "Manf"
+DRAW
+S -275 525 275 -525 0 0 10 N
+X DAT2 1 375 0 100 L 50 50 1 1 B
+X CS/DAT3 2 375 150 100 L 50 50 1 1 I
+X DI/CMD 3 375 300 100 L 50 50 1 1 I
+X Vdd 4 -150 625 100 D 50 50 1 1 I
+X CLK 5 375 450 100 L 50 50 1 1 I
+X GND 6 -150 -625 100 U 50 50 1 1 I
+X DO/DAT0 7 375 -300 100 L 50 50 1 1 I
+X DAT1 8 375 -150 100 L 50 50 1 1 B
+X CD 9 375 -450 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# open-Smartwatch_USB-OTG
+#
+DEF open-Smartwatch_USB-OTG U 0 40 Y Y 1 F N
+F0 "U" 250 -200 60 H V C CNN
+F1 "open-Smartwatch_USB-OTG" 200 500 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
+DRAW
+S -50 450 450 -150 0 1 8 f
+X GND 1 -250 400 200 R 50 50 1 1 I
+X ID 2 -250 300 200 R 50 50 1 1 I
+X D+ 3 -250 200 200 R 50 50 1 1 I
+X D- 4 -250 100 200 R 50 50 1 1 I
+X VBUS 5 -250 0 200 R 50 50 1 1 I
+X SHIELD 6 -250 -100 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # open-Smartwatch_ttgo-32-micro
 #
 DEF open-Smartwatch_ttgo-32-micro U 0 40 Y Y 1 F N
 F0 "U" 50 50 50 H V C CNN
 F1 "open-Smartwatch_ttgo-32-micro" 0 850 50 H V C CNN
-F2 "" -400 600 50 H I C CNN
+F2 "open-Smartwatch:ttgo-32-micro" -400 600 50 H I C CNN
 F3 "" -400 600 50 H I C CNN
 DRAW
-S -450 800 450 -1050 0 1 0 N
+S -450 800 450 -1050 0 1 12 f
 X GND 1 -650 700 200 R 50 50 1 1 W
 X IO25 10 -650 -200 200 R 50 50 1 1 B
 X IO26 11 -650 -300 200 R 50 50 1 1 B
