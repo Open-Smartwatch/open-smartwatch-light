@@ -38,12 +38,12 @@ $EndComp
 $Comp
 L open-Smartwatch:ttgo-32-micro U3
 U 1 1 5F52BDFD
-P 2650 2550
-F 0 "U3" H 2650 3515 50  0000 C CNN
-F 1 "ttgo-32-micro" H 2650 3424 50  0000 C CNN
-F 2 "open-Smartwatch:ttgo-32-micro" H 2250 3150 50  0001 C CNN
-F 3 "" H 2250 3150 50  0001 C CNN
-	1    2650 2550
+P 1600 1750
+F 0 "U3" H 1600 2715 50  0000 C CNN
+F 1 "ttgo-32-micro" H 1600 2624 50  0000 C CNN
+F 2 "open-Smartwatch:ttgo-32-micro" H 1200 2350 50  0001 C CNN
+F 3 "" H 1200 2350 50  0001 C CNN
+	1    1600 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -73,56 +73,160 @@ $EndComp
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5F553E06
-P 6700 4800
-F 0 "SW1" H 6700 5085 50  0000 C CNN
-F 1 "SW_Push" H 6700 4994 50  0000 C CNN
-F 2 "open-Smartwatch:button_side_smd" H 6700 5000 50  0001 C CNN
-F 3 "~" H 6700 5000 50  0001 C CNN
-	1    6700 4800
-	1    0    0    -1  
+P 850 7050
+F 0 "SW1" H 850 7335 50  0000 C CNN
+F 1 "SW_Push" H 850 7244 50  0000 C CNN
+F 2 "open-Smartwatch:button_side_smd" H 850 7250 50  0001 C CNN
+F 3 "~" H 850 7250 50  0001 C CNN
+	1    850  7050
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5F55457A
-P 7400 4800
-F 0 "SW2" H 7400 5085 50  0000 C CNN
-F 1 "SW_Push" H 7400 4994 50  0000 C CNN
-F 2 "open-Smartwatch:button_side_smd" H 7400 5000 50  0001 C CNN
-F 3 "~" H 7400 5000 50  0001 C CNN
-	1    7400 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW3
-U 1 1 5F554B17
-P 8000 4800
-F 0 "SW3" H 8000 5085 50  0000 C CNN
-F 1 "SW_Push" H 8000 4994 50  0000 C CNN
-F 2 "open-Smartwatch:button_side_smd" H 8000 5000 50  0001 C CNN
-F 3 "~" H 8000 5000 50  0001 C CNN
-	1    8000 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW4
-U 1 1 5F554FA6
-P 8700 4800
-F 0 "SW4" H 8700 5085 50  0000 C CNN
-F 1 "SW_Push" H 8700 4994 50  0000 C CNN
-F 2 "open-Smartwatch:button_side_smd" H 8700 5000 50  0001 C CNN
-F 3 "~" H 8700 5000 50  0001 C CNN
-	1    8700 4800
-	1    0    0    -1  
+P 1500 7050
+F 0 "SW2" H 1500 7335 50  0000 C CNN
+F 1 "SW_Push" H 1500 7244 50  0000 C CNN
+F 2 "open-Smartwatch:button_side_smd" H 1500 7250 50  0001 C CNN
+F 3 "~" H 1500 7250 50  0001 C CNN
+	1    1500 7050
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Switch:SW_Push SW5
 U 1 1 5F558C1E
-P 9300 4800
-F 0 "SW5" H 9300 5085 50  0000 C CNN
-F 1 "SW_Push" H 9300 4994 50  0000 C CNN
-F 2 "open-Smartwatch:button_side_smd" H 9300 5000 50  0001 C CNN
-F 3 "~" H 9300 5000 50  0001 C CNN
-	1    9300 4800
+P 3150 7050
+F 0 "SW5" H 3150 7335 50  0000 C CNN
+F 1 "SW_Push" H 3150 7244 50  0000 C CNN
+F 2 "open-Smartwatch:button_side_smd" H 3150 7250 50  0001 C CNN
+F 3 "~" H 3150 7250 50  0001 C CNN
+	1    3150 7050
+	0    -1   -1   0   
+$EndComp
+Text Label 700  1250 2    50   ~ 0
+EN
+Wire Wire Line
+	700  1250 950  1250
+Text Label 700  6650 1    50   ~ 0
+EN
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5F55D40B
+P 850 6350
+F 0 "#PWR0101" H 850 6200 50  0001 C CNN
+F 1 "+3V3" H 865 6523 50  0000 C CNN
+F 2 "" H 850 6350 50  0001 C CNN
+F 3 "" H 850 6350 50  0001 C CNN
+	1    850  6350
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5F55DCE6
+P 850 6600
+F 0 "R1" H 909 6646 50  0000 L CNN
+F 1 "R_Small" H 909 6555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 850 6600 50  0001 C CNN
+F 3 "~" H 850 6600 50  0001 C CNN
+	1    850  6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  6750 850  6750
+Wire Wire Line
+	850  6750 850  6700
+Wire Wire Line
+	850  6850 850  6750
+Connection ~ 850  6750
+Wire Wire Line
+	850  6350 850  6500
+$Comp
+L power:GND #PWR0102
+U 1 1 5F5605E1
+P 850 7500
+F 0 "#PWR0102" H 850 7250 50  0001 C CNN
+F 1 "GND" H 855 7327 50  0000 C CNN
+F 2 "" H 850 7500 50  0001 C CNN
+F 3 "" H 850 7500 50  0001 C CNN
+	1    850  7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  7500 850  7250
+Text Label 2400 2350 0    50   ~ 0
+FLASH
+Wire Wire Line
+	2400 2350 2250 2350
+Text Label 1350 6650 1    50   ~ 0
+FLASH
+$Comp
+L Device:R_Small R2
+U 1 1 5F56208D
+P 1500 6600
+F 0 "R2" H 1559 6646 50  0000 L CNN
+F 1 "R_Small" H 1559 6555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1500 6600 50  0001 C CNN
+F 3 "~" H 1500 6600 50  0001 C CNN
+	1    1500 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5F562498
+P 1500 6350
+F 0 "#PWR0103" H 1500 6200 50  0001 C CNN
+F 1 "+3V3" H 1515 6523 50  0000 C CNN
+F 2 "" H 1500 6350 50  0001 C CNN
+F 3 "" H 1500 6350 50  0001 C CNN
+	1    1500 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 6500 1500 6350
+Wire Wire Line
+	1500 6700 1500 6750
+Wire Wire Line
+	1500 6750 1350 6750
+Wire Wire Line
+	1350 6750 1350 6650
+Connection ~ 1500 6750
+Wire Wire Line
+	1500 6750 1500 6850
+Wire Wire Line
+	700  6750 700  6650
+$Comp
+L power:GND #PWR0104
+U 1 1 5F563775
+P 1500 7500
+F 0 "#PWR0104" H 1500 7250 50  0001 C CNN
+F 1 "GND" H 1505 7327 50  0000 C CNN
+F 2 "" H 1500 7500 50  0001 C CNN
+F 3 "" H 1500 7500 50  0001 C CNN
+	1    1500 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 7500 1500 7250
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5F554FA6
+P 2650 7050
+F 0 "SW4" H 2650 7335 50  0000 C CNN
+F 1 "SW_Push" H 2650 7244 50  0000 C CNN
+F 2 "open-Smartwatch:button_side_smd" H 2650 7250 50  0001 C CNN
+F 3 "~" H 2650 7250 50  0001 C CNN
+	1    2650 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5F554B17
+P 2150 7050
+F 0 "SW3" H 2150 7335 50  0000 C CNN
+F 1 "SW_Push" H 2150 7244 50  0000 C CNN
+F 2 "open-Smartwatch:button_side_smd" H 2150 7250 50  0001 C CNN
+F 3 "~" H 2150 7250 50  0001 C CNN
+	1    2150 7050
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
