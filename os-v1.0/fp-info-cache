@@ -1,4 +1,4 @@
-17072899148804035
+17074498735495035
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75830,6 +75830,13 @@ SSOP 0.5
 0
 10
 10
+open-Smartwatch
+PinHeader_1x04_P2.54mm_test
+Through hole straight pin header, 1x04, 2.54mm pitch, single row
+Through hole pin header THT 1x04 2.54mm single row
+0
+4
+4
 open-Smartwatch
 QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm
 QFN, 48 Pin (https://www.trinamic.com/fileadmin/assets/Products/ICs_Documents/TMC2041_datasheet.pdf#page=62), generated with kicad-footprint-generator ipc_noLead_generator.py
