@@ -1328,10 +1328,8 @@ Wire Notes Line
 Text Notes 6900 4750 0    50   Italic 10
 BUTTONS & CONNECTORS
 Wire Wire Line
-	4700 5150 4700 5350
-Wire Wire Line
-	4700 5350 5000 5350
-Text Label 5000 5350 2    50   ~ 0
+	5500 4600 5800 4600
+Text Label 5800 4600 2    50   ~ 0
 PIN_LED
 Wire Wire Line
 	1350 1050 1450 1050
@@ -1744,18 +1742,6 @@ F 3 "" H 4450 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 4300 3950 4300
-Wire Wire Line
-	4200 4400 3950 4400
-Wire Wire Line
-	4200 4500 3950 4500
-Text Label 3950 4300 0    50   ~ 0
-BTN3
-Text Label 3950 4400 0    50   ~ 0
-BTN4
-Text Label 3950 4500 0    50   ~ 0
-BTN2
-Wire Wire Line
 	5800 1500 6100 1500
 Wire Wire Line
 	8400 1300 8400 1350
@@ -1901,27 +1887,41 @@ Wire Wire Line
 Wire Wire Line
 	2650 4400 2950 4400
 Wire Wire Line
-	4500 5150 4500 5250
+	4200 4300 3850 4300
 Wire Wire Line
-	4500 5250 4200 5250
-Wire Wire Line
-	4600 5150 4600 5350
-Wire Wire Line
-	4600 5350 4200 5350
+	4200 4400 3850 4400
 Text Label 2950 4400 2    50   ~ 0
 GPS_RX
 Text Label 2950 4300 2    50   ~ 0
 GPS_TX
-Text Label 4200 5250 0    50   ~ 0
-GPS_TX
-Text Label 4200 5350 0    50   ~ 0
+Text Label 3850 4400 0    50   ~ 0
 GPS_RX
-Text Label 5750 4600 2    50   ~ 0
+Text Label 3850 4500 0    50   ~ 0
 SD_CS
 Wire Wire Line
-	5500 4600 5750 4600
+	4200 4500 3850 4500
 Text Label 3950 3500 0    50   ~ 0
 B_MON
 Wire Wire Line
 	4200 3500 3950 3500
+Text Label 3850 4300 0    50   ~ 0
+GPS_TX
+Text Label 4300 5450 0    50   ~ 0
+BTN2
+Text Label 4300 5350 0    50   ~ 0
+BTN4
+Wire Wire Line
+	4700 5150 4700 5450
+Wire Wire Line
+	4300 5350 4600 5350
+Wire Wire Line
+	4600 5150 4600 5350
+Wire Wire Line
+	4500 5150 4500 5250
+Text Label 4300 5250 0    50   ~ 0
+BTN3
+Wire Wire Line
+	4500 5250 4300 5250
+Wire Wire Line
+	4300 5450 4700 5450
 $EndSCHEMATC
