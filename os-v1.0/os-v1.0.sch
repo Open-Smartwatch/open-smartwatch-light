@@ -417,31 +417,31 @@ F 3 "" H 9150 3400 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	4900 1850 4900 1800
+	4550 1850 4550 1800
 Wire Wire Line
-	4800 1050 4800 1100
+	4450 1050 4450 1100
 Wire Wire Line
-	4900 850  4900 1050
+	4550 850  4550 1050
 $Comp
 L power:+3V3 #PWR06
 U 1 1 5F71770B
-P 4900 850
-F 0 "#PWR06" H 4900 700 50  0001 C CNN
-F 1 "+3V3" H 4915 1023 50  0000 C CNN
-F 2 "" H 4900 850 50  0001 C CNN
-F 3 "" H 4900 850 50  0001 C CNN
-	1    4900 850 
+P 4550 850
+F 0 "#PWR06" H 4550 700 50  0001 C CNN
+F 1 "+3V3" H 4565 1023 50  0000 C CNN
+F 2 "" H 4550 850 50  0001 C CNN
+F 3 "" H 4550 850 50  0001 C CNN
+	1    4550 850 
 	1    0    0    -1  
 $EndComp
 $Comp
 L open-Smartwatch:BMP280 U3
 U 1 1 5F716A88
-P 4800 1500
-F 0 "U3" H 4500 1850 50  0000 L CNN
-F 1 "BMP280" H 4400 1250 50  0000 L CNN
-F 2 "open-Smartwatch:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering" H 4800 800 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf" H 4800 1500 50  0001 C CNN
-	1    4800 1500
+P 4450 1500
+F 0 "U3" H 4150 1850 50  0000 L CNN
+F 1 "BMP280" H 4050 1250 50  0000 L CNN
+F 2 "open-Smartwatch:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering" H 4450 800 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf" H 4450 1500 50  0001 C CNN
+	1    4450 1500
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8900 3700
@@ -450,8 +450,8 @@ Wire Wire Line
 	8900 3500 8700 3500
 NoConn ~ 950  1700
 NoConn ~ 1950 1300
-NoConn ~ 4400 1500
-NoConn ~ 4400 1600
+NoConn ~ 4050 1500
+NoConn ~ 4050 1600
 Wire Wire Line
 	5500 4500 5750 4500
 Text Label 5750 4500 2    50   ~ 0
@@ -460,34 +460,34 @@ Wire Wire Line
 	4200 3400 4050 3400
 Text Label 4050 3400 0    50   ~ 0
 EN
-Text Label 4250 1300 0    50   ~ 0
+Text Label 3900 1300 0    50   ~ 0
 SCL
 Wire Wire Line
-	4250 1300 4400 1300
-Text Label 4250 1400 0    50   ~ 0
+	3900 1300 4050 1300
+Text Label 3900 1400 0    50   ~ 0
 SDA
 Wire Wire Line
-	4250 1400 4400 1400
+	3900 1400 4050 1400
 Wire Wire Line
 	1950 1600 2150 1600
 Wire Wire Line
-	4800 2250 4800 1850
+	4450 2250 4450 1850
 $Comp
 L power:GND #PWR010
 U 1 1 5F72B249
-P 4800 2250
-F 0 "#PWR010" H 4800 2000 50  0001 C CNN
-F 1 "GND" H 4805 2077 50  0000 C CNN
-F 2 "" H 4800 2250 50  0001 C CNN
-F 3 "" H 4800 2250 50  0001 C CNN
-	1    4800 2250
+P 4450 2250
+F 0 "#PWR010" H 4450 2000 50  0001 C CNN
+F 1 "GND" H 4455 2077 50  0000 C CNN
+F 2 "" H 4450 2250 50  0001 C CNN
+F 3 "" H 4450 2250 50  0001 C CNN
+	1    4450 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 1850 4900 1850
-Connection ~ 4800 1850
+	4450 1850 4550 1850
+Connection ~ 4450 1850
 Wire Wire Line
-	4800 1850 4800 1800
+	4450 1850 4450 1800
 Wire Wire Line
 	9950 5900 10150 5900
 Wire Wire Line
@@ -534,10 +534,10 @@ SCK
 Text Label 5700 4100 2    50   ~ 0
 CS
 Wire Wire Line
-	4800 1050 4900 1050
-Connection ~ 4900 1050
+	4450 1050 4550 1050
+Connection ~ 4550 1050
 Wire Wire Line
-	4900 1050 4900 1100
+	4550 1050 4550 1100
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5FA4BA83
@@ -695,11 +695,7 @@ Wire Notes Line
 Wire Notes Line
 	600  5600 600  2600
 Wire Notes Line
-	600  550  5150 550 
-Wire Notes Line
-	5150 550  5150 2500
-Wire Notes Line
-	5150 2500 600  2500
+	5500 550  5500 2500
 Wire Notes Line
 	600  2500 600  550 
 Wire Notes Line
@@ -764,7 +760,7 @@ F 3 "~" H 3200 7100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4400 6550 4150 6550
-Text Label 4400 6550 0    50   ~ 0
+Text Label 4400 6550 2    50   ~ 0
 VOUT
 Wire Wire Line
 	4700 7350 4700 7200
@@ -773,8 +769,6 @@ Wire Wire Line
 Connection ~ 4400 6750
 Wire Wire Line
 	4450 6750 4400 6750
-Wire Wire Line
-	4700 6400 4800 6400
 Connection ~ 4700 6400
 Wire Wire Line
 	4700 7000 4700 6400
@@ -841,8 +835,6 @@ F 3 "~" H 4400 7100 50  0001 C CNN
 $EndComp
 Text Label 4450 6750 0    50   ~ 0
 VBUS
-Text Label 4800 6400 0    50   ~ 0
-VBAT
 $Comp
 L open-Smartwatch:TPS2115A_default U9
 U 1 1 5F5729B8
@@ -1278,7 +1270,7 @@ F 3 "" H 6400 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6400 2250 6400 1700
-Text Label 6400 1000 1    50   ~ 0
+Text Label 6400 1000 2    50   ~ 0
 LEDK
 Wire Wire Line
 	6400 1000 6400 1300
@@ -1375,88 +1367,75 @@ F 3 "" H 9900 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6300 6750
-Text Label 3800 1600 2    50   ~ 0
+Text Label 3700 1600 2    50   ~ 0
 IO35
-Text Label 3800 1400 2    50   ~ 0
+Text Label 3700 1400 2    50   ~ 0
 IO34
 Wire Wire Line
-	3600 1600 3800 1600
+	3500 1600 3700 1600
 Wire Wire Line
-	3600 1400 3800 1400
-NoConn ~ 2600 1800
-NoConn ~ 2600 1650
-Text Label 2450 1400 0    50   ~ 0
+	3500 1400 3700 1400
+NoConn ~ 2500 1800
+NoConn ~ 2500 1650
+Text Label 2350 1400 0    50   ~ 0
 SCL
 $Comp
 L open-Smartwatch:BMA400 U2
 U 1 1 5F6C61F2
-P 3100 1500
-F 0 "U2" H 2700 2000 50  0000 L CNN
-F 1 "BMA400" H 3250 1050 50  0000 L CNN
-F 2 "open-Smartwatch:LGA-12_2x2mm_P0.5mm" H 4100 1050 50  0001 C CIN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMA400-DS000.pdf" H 3100 1500 50  0001 C CNN
-F 4 "828-1081-1-ND" H 3610 955 50  0001 C CNN "DigiKey_PN"
-F 5 "Bosch Sensortec" H 3590 880 50  0001 C CNN "Manufacturer"
-F 6 "BMA400" H 3425 795 50  0001 C CNN "MPN"
-	1    3100 1500
+P 3000 1500
+F 0 "U2" H 2600 2000 50  0000 L CNN
+F 1 "BMA400" H 3150 1050 50  0000 L CNN
+F 2 "open-Smartwatch:LGA-12_2x2mm_P0.5mm" H 4000 1050 50  0001 C CIN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMA400-DS000.pdf" H 3000 1500 50  0001 C CNN
+F 4 "828-1081-1-ND" H 3510 955 50  0001 C CNN "DigiKey_PN"
+F 5 "Bosch Sensortec" H 3490 880 50  0001 C CNN "Manufacturer"
+F 6 "BMA400" H 3325 795 50  0001 C CNN "MPN"
+	1    3000 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR05
 U 1 1 5F6D0321
-P 3200 850
-F 0 "#PWR05" H 3200 700 50  0001 C CNN
-F 1 "+3V3" H 3215 1023 50  0000 C CNN
-F 2 "" H 3200 850 50  0001 C CNN
-F 3 "" H 3200 850 50  0001 C CNN
-	1    3200 850 
+P 3100 850
+F 0 "#PWR05" H 3100 700 50  0001 C CNN
+F 1 "+3V3" H 3115 1023 50  0000 C CNN
+F 2 "" H 3100 850 50  0001 C CNN
+F 3 "" H 3100 850 50  0001 C CNN
+	1    3100 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 850  3200 950 
+	3100 850  3100 900 
 Wire Wire Line
-	2450 1400 2600 1400
+	2350 1400 2500 1400
 Wire Wire Line
-	2450 1250 2600 1250
+	2350 1250 2500 1250
 Wire Wire Line
-	3000 950  3000 850 
+	3100 2000 3100 2250
 Wire Wire Line
-	3200 2000 3200 2250
-Wire Wire Line
-	3000 2250 3000 2000
-Text Label 2450 1250 0    50   ~ 0
+	2900 2250 2900 2000
+Text Label 2350 1250 0    50   ~ 0
 SDA
 $Comp
 L power:GND #PWR012
 U 1 1 5F6DB86E
-P 3200 2250
-F 0 "#PWR012" H 3200 2000 50  0001 C CNN
-F 1 "GND" H 3205 2077 50  0000 C CNN
-F 2 "" H 3200 2250 50  0001 C CNN
-F 3 "" H 3200 2250 50  0001 C CNN
-	1    3200 2250
+P 3100 2250
+F 0 "#PWR012" H 3100 2000 50  0001 C CNN
+F 1 "GND" H 3105 2077 50  0000 C CNN
+F 2 "" H 3100 2250 50  0001 C CNN
+F 3 "" H 3100 2250 50  0001 C CNN
+	1    3100 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 5F6D792A
-P 3000 2250
-F 0 "#PWR011" H 3000 2000 50  0001 C CNN
-F 1 "GND" H 3005 2077 50  0000 C CNN
-F 2 "" H 3000 2250 50  0001 C CNN
-F 3 "" H 3000 2250 50  0001 C CNN
-	1    3000 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR04
-U 1 1 5F6CFD16
-P 3000 850
-F 0 "#PWR04" H 3000 700 50  0001 C CNN
-F 1 "+3V3" H 3015 1023 50  0000 C CNN
-F 2 "" H 3000 850 50  0001 C CNN
-F 3 "" H 3000 850 50  0001 C CNN
-	1    3000 850 
+P 2900 2250
+F 0 "#PWR011" H 2900 2000 50  0001 C CNN
+F 1 "GND" H 2905 2077 50  0000 C CNN
+F 2 "" H 2900 2250 50  0001 C CNN
+F 3 "" H 2900 2250 50  0001 C CNN
+	1    2900 2250
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1050 3850
@@ -1845,4 +1824,71 @@ Wire Wire Line
 	7100 1800 6950 1800
 Text Notes 6750 950  0    50   ~ 0
 TODO:\nDEFINE SPI PINS
+$Comp
+L Device:R_Small R16
+U 1 1 5F7492F9
+P 5250 1300
+F 0 "R16" V 5175 1225 50  0000 L CNN
+F 1 "10M" V 5325 1225 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5250 1300 50  0001 C CNN
+F 3 "~" H 5250 1300 50  0001 C CNN
+	1    5250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R17
+U 1 1 5F749989
+P 5250 1700
+F 0 "R17" V 5175 1625 50  0000 L CNN
+F 1 "2.2M" V 5325 1600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5250 1700 50  0001 C CNN
+F 3 "~" H 5250 1700 50  0001 C CNN
+	1    5250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1400 5250 1500
+$Comp
+L power:GND #PWR053
+U 1 1 5F75A57D
+P 5250 2250
+F 0 "#PWR053" H 5250 2000 50  0001 C CNN
+F 1 "GND" H 5255 2077 50  0000 C CNN
+F 2 "" H 5250 2250 50  0001 C CNN
+F 3 "" H 5250 2250 50  0001 C CNN
+	1    5250 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1800 5250 2250
+Text Label 5250 1050 2    50   ~ 0
+VBAT
+Wire Wire Line
+	5250 1200 5250 1050
+Wire Notes Line
+	600  2500 5500 2500
+Wire Notes Line
+	600  550  5500 550 
+Wire Wire Line
+	5250 1500 4850 1500
+Connection ~ 5250 1500
+Wire Wire Line
+	5250 1500 5250 1600
+Text Label 4850 1500 0    50   ~ 0
+B_MON
+Wire Wire Line
+	2900 950  2900 900 
+Wire Wire Line
+	2900 900  3100 900 
+Connection ~ 3100 900 
+Wire Wire Line
+	3100 900  3100 950 
+Text Label 4800 6400 0    50   ~ 0
+VBAT
+Wire Wire Line
+	4700 6400 4800 6400
+Text Notes 4900 750  0    50   ~ 0
+VBAT:\n3.7-4.2V
+Text Notes 4900 900  0    50   ~ 0
+VBAT =\n5.55 * B_MON\n
 $EndSCHEMATC
