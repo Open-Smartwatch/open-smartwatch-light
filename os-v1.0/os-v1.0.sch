@@ -2303,4 +2303,21 @@ F 3 "" H 2450 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2450 1600 2450 2200
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5F5D2386
+P 2500 2900
+F 0 "J3" H 2450 3000 50  0000 L CNN
+F 1 "Conn_01x02" H 2450 2700 50  0000 L CNN
+F 2 "open-Smartwatch:U.FL_Molex_MCRF_73412-0110_Vertical" H 2500 2900 50  0001 C CNN
+F 3 "~" H 2500 2900 50  0001 C CNN
+	1    2500 2900
+	1    0    0    -1  
+$EndComp
+Text Label 2150 2900 0    50   ~ 0
+ANT
+Wire Wire Line
+	2150 2900 2300 2900
+Text Label 800  3450 0    50   ~ 0
+ANT
 $EndSCHEMATC
