@@ -573,7 +573,6 @@ Wire Notes Line
 	8150 4600 8150 2650
 Text Label 1800 6100 2    50   ~ 0
 VBUS
-NoConn ~ 3350 6550
 Wire Wire Line
 	2775 6400 3250 6400
 Text Label 2775 6400 0    50   ~ 0
@@ -1620,9 +1619,7 @@ Text Label 3850 5550 0    50   ~ 0
 BTN2
 Text Label 3400 4400 0    50   ~ 0
 GPS_TX
-Wire Wire Line
-	3750 3600 3500 3600
-Text Label 3500 3600 0    50   ~ 0
+Text Label 3400 4200 0    50   ~ 0
 B_MON
 Wire Wire Line
 	3750 4600 3400 4600
@@ -1670,10 +1667,8 @@ F 3 "" H 4000 4600 50  0001 C CNN
 	1    4400 4000
 	1    0    0    -1  
 $EndComp
-Text Label 5350 4700 2    50   ~ 0
+Text Label 3850 5450 0    50   ~ 0
 PIN_LED
-Wire Wire Line
-	5050 4700 5350 4700
 Wire Wire Line
 	4750 5350 5150 5350
 Wire Wire Line
@@ -2193,4 +2188,13 @@ Wire Wire Line
 	3400 4200 3750 4200
 Wire Wire Line
 	3400 4300 3750 4300
+NoConn ~ 3750 3600
+Wire Wire Line
+	4150 5450 4150 5250
+Wire Wire Line
+	3850 5450 4150 5450
+Text Label 3100 6550 0    50   ~ 0
+VBAT
+Wire Wire Line
+	3100 6550 3350 6550
 $EndSCHEMATC
