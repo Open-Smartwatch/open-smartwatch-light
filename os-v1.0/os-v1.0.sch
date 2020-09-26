@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Open-Smartwatch"
-Date "2020-09-09"
-Rev "1.0"
+Date "2020-09-26"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -378,7 +378,7 @@ U 1 1 5FA4BA83
 P 7650 5875
 F 0 "J1" H 7600 5975 50  0000 L CNN
 F 1 "Conn_01x02" H 7600 5675 50  0000 L CNN
-F 2 "Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical" H 7650 5875 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7650 5875 50  0001 C CNN
 F 3 "~" H 7650 5875 50  0001 C CNN
 	1    7650 5875
 	1    0    0    -1  
