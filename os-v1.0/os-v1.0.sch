@@ -2082,7 +2082,6 @@ Wire Wire Line
 Connection ~ 6550 5900
 Wire Wire Line
 	5450 7200 6350 7200
-NoConn ~ 5050 4500
 Wire Wire Line
 	9150 2800 9700 2800
 Wire Wire Line
@@ -2248,4 +2247,14 @@ Wire Notes Line
 Wire Notes Line
 	500  2500 3025 2500
 NoConn ~ 2325 1600
+Text Label 5500 4500 2    50   ~ 0
+MODE_SYNC
+Wire Wire Line
+	5500 4500 5050 4500
+Text Label 4600 6000 3    50   ~ 0
+MODE_SYNC
+Wire Wire Line
+	4600 6000 4600 6600
+Wire Wire Line
+	4600 6600 4750 6600
 $EndSCHEMATC
