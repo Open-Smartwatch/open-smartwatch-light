@@ -1850,10 +1850,10 @@ F 3 "~" H 2425 2750 50  0001 C CNN
 	1    2425 2750
 	1    0    0    -1  
 $EndComp
-Text Label 2125 2750 0    50   ~ 0
+Text Label 2100 2750 0    50   ~ 0
 ANT
 Wire Wire Line
-	2125 2750 2225 2750
+	2100 2750 2225 2750
 Text Label 725  3300 0    50   ~ 0
 ANT
 NoConn ~ 975  4100
@@ -2174,9 +2174,6 @@ Wire Wire Line
 	4750 1100 4750 2100
 Wire Wire Line
 	4625 2100 4750 2100
-Connection ~ 2225 2750
-Wire Wire Line
-	2225 2750 2275 2750
 Wire Wire Line
 	1775 3075 2750 3075
 Wire Wire Line
@@ -2250,4 +2247,5 @@ Wire Notes Line
 	8200 4525 11100 4525
 Wire Notes Line
 	500  2500 3025 2500
+NoConn ~ 2325 1600
 $EndSCHEMATC
