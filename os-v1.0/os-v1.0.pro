@@ -1,4 +1,4 @@
-update=2020 September 26, Saturday 16:52:22
+update=2020 September 27, Sunday 15:44:45
 last_client=kicad
 [general]
 version=1
@@ -72,7 +72,7 @@ Name=VCC
 Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
-Name=Signal
+Name=GND
 Type=1
 Enabled=1
 [pcbnew/Layer.In3.Cu]
