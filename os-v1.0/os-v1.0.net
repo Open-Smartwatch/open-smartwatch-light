@@ -1,14 +1,14 @@
 (export (version D)
   (design
     (source /Users/paul/data/code/open-smartwatch/kicad-project/os-v1.0/os-v1.0.sch)
-    (date "2020 September 28, Monday 19:11:01")
+    (date "2020 September 28, Monday 23:33:22")
     (tool "Eeschema (5.1.6-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title Open-Smartwatch)
         (company)
-        (rev 1.1)
-        (date 2020-09-26)
+        (rev 1.2)
+        (date 2020-09-28)
         (source os-v1.0.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
