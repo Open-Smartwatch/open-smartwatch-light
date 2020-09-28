@@ -1146,7 +1146,6 @@ F 3 "" H 1725 5150 50  0001 C CNN
 $EndComp
 NoConn ~ 975  4500
 NoConn ~ 2575 3900
-NoConn ~ 2575 3600
 NoConn ~ 2575 3750
 NoConn ~ 2575 4050
 Connection ~ 1575 3075
@@ -1419,7 +1418,6 @@ Text Label 1800 1900 1    50   ~ 0
 RTC_INT
 Wire Wire Line
 	1700 1550 1800 1550
-NoConn ~ 2575 3450
 Wire Wire Line
 	2575 4250 2875 4250
 Wire Wire Line
@@ -1557,7 +1555,6 @@ F 3 "" H 3475 5100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 3200 3600 3200
-NoConn ~ 3750 3500
 NoConn ~ 4350 5050
 NoConn ~ 4450 5050
 NoConn ~ 4550 5050
@@ -1869,7 +1866,6 @@ Wire Wire Line
 	3400 4000 3750 4000
 Wire Wire Line
 	3400 4100 3750 4100
-NoConn ~ 3750 3400
 Wire Wire Line
 	4150 5250 4150 5050
 Wire Wire Line
@@ -2182,12 +2178,6 @@ Wire Wire Line
 	2750 5100 2425 5100
 Connection ~ 2425 5100
 Wire Wire Line
-	2750 3325 2750 4125
-Wire Wire Line
-	2750 4125 2925 4125
-Wire Wire Line
-	2925 4125 2925 4400
-Wire Wire Line
 	2925 4400 2750 4400
 Wire Wire Line
 	2750 4400 2750 5100
@@ -2257,4 +2247,14 @@ Wire Wire Line
 	4600 6000 4600 6600
 Wire Wire Line
 	4600 6600 4750 6600
+NoConn ~ 3750 3500
+NoConn ~ 3750 3400
+NoConn ~ 2575 3450
+NoConn ~ 2575 3600
+Wire Wire Line
+	2925 4125 2925 4400
+Wire Wire Line
+	2750 4125 2925 4125
+Wire Wire Line
+	2750 3325 2750 4125
 $EndSCHEMATC
