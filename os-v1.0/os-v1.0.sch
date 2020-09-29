@@ -237,15 +237,15 @@ F 3 "" H 10150 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 9600 3500 2    50   ~ 0
-D-
+D_N
 Text Label 9600 3400 2    50   ~ 0
-D+
+D_P
 Text Label 10050 3400 0    50   ~ 0
-D-
+D_N
 Wire Wire Line
 	10050 3500 10250 3500
 Text Label 10050 3500 0    50   ~ 0
-D+
+D_P
 Wire Wire Line
 	8550 3200 8650 3200
 Wire Wire Line
