@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.6-0-10_14)")
+(kicad_pcb (version 20171130) (host pcbnew 5.1.5)
 
   (general
     (thickness 1.6)
@@ -10,6 +10,11 @@
   )
 
   (page A4)
+  (title_block
+    (date 2020-11-10)
+    (rev 1.0)
+  )
+
   (layers
     (0 F.Cu signal)
     (1 3V3 power)

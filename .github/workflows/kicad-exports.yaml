@@ -1,0 +1,35 @@
+name: kicad-export
+
+on:
+  # run only on push/pull_request AND if KiCad files changed
+  push:
+    paths:
+    - '**.sch'
+    - '**.kicad_pcb'
+  pull_request:
+    paths:
+    - '**.sch'
+    - '**.kicad_pcb'
+    
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+    - uses: nerdyscout/kicad-exports@v2.0
+      with:
+        config: config.kiplot.yaml
+        board: osw.kicad_pcb
+        schema: osw.sch
+    - uses: github-actions-x/commit@v2.7
+      if: ${{ success() }}
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        name: 'GitHub Actions'
+        email: 'actions@github.com'
+        commit-message: ${{ github.workflow }}
+        files: gerbers/* docs/* 
+

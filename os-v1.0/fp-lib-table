@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name open-Smartwatch)(type KiCad)(uri ${KIPRJMOD}/lib/open-Smartwatch.pretty)(options "")(descr ""))
-)
