@@ -1,0 +1,27 @@
+Drill report for /github/workspace/osw.kicad_pcb
+Created on Tue Nov 10 17:19:22 2020
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  3V3                       in1
+    L3 :  GND                       in2
+    L4 :  B.Cu                      back
+
+
+Drill file 'osw-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.33mm  0.013"  (146 holes)
+    T2  0.40mm  0.016"  (8 holes)  (with 8 slots)
+    T3  0.75mm  0.030"  (2 holes)  (with 2 slots)
+
+    Total plated holes count 156
+
+
+Drill file 'osw-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  1.00mm  0.039"  (4 holes)  (with 2 slots)
+
+    Total unplated holes count 4
