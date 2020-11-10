@@ -10,6 +10,11 @@
   )
 
   (page A4)
+  (title_block
+    (date 2020-11-10)
+    (rev 1.0)
+  )
+
   (layers
     (0 F.Cu signal)
     (1 3V3 power)
