@@ -1,6 +1,6 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,5.1.5+dfsg1-2~bpo10+1*%
 %TF.CreationDate,Date%
-%TF.ProjectId,osw,6f73772e-6b69-4636-9164-5f7063625858,rev?*%
+%TF.ProjectId,osw,6f73772e-6b69-4636-9164-5f7063625858,1.0*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,NonPlated,1,4,NPTH,Mixed*%
 %TF.FilePolarity,Positive*%
@@ -10,22 +10,22 @@ G04 Created by KiCad*
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*
+G04 aperture for slot hole*
 %TA.AperFunction,ComponentDrill*%
 %ADD10C,1.000000*%
 %TD*%
-G04 aperture for slot hole*
 %TA.AperFunction,ComponentDrill*%
 %ADD11C,1.000000*%
 %TD*%
 G04 APERTURE END LIST*
 D10*
-%TO.C,XS1*%
-X142200000Y-102870000D03*
-X142200000Y-110850000D03*
-D11*
 %TO.C,U5*%
 X157714000Y-126404500D02*
 X157714000Y-126404500D01*
 X162286000Y-126404500D02*
 X162286000Y-126404500D01*
+D11*
+%TO.C,XS1*%
+X142200000Y-102870000D03*
+X142200000Y-110850000D03*
 M02*
