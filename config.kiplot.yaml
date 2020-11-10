@@ -1,4 +1,4 @@
-kibot:
+kiplot:
   version: 1
 
 preflight:
@@ -388,7 +388,8 @@ outputs:
       # [list(string)] list of components to highlight
       # highlight:
       # [list(string)] list of libraries
-      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
+#v2.1      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
+      libs: ['/opt/pcbdraw/pcbdraw/lib']
       # [boolean=false] mirror the board
       mirror: false
       # [boolean=false] do not make holes transparent
@@ -403,7 +404,8 @@ outputs:
       # The default is none
       show_components: none
       # [string|dict] PCB style (colors). An internal name, the name of a JSON file or the style options
-      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
+#v2.1      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
+      style: '/opt/pcbdraw/pcbdraw/styles/jlcpcb-green-hasl.json'      
       # [boolean=false] render V-CUTS on the Cmts.User layer
       vcuts: true
       # [string='visible'] [visible,all,none] using visible only the warnings about components in the visible side are generated
@@ -423,7 +425,8 @@ outputs:
       # [list(string)] list of components to highlight
       # highlight:
       # [list(string)] list of libraries
-      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
+#v2.1      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
+      libs: ['/opt/pcbdraw/pcbdraw/lib']
       # [boolean=false] mirror the board
       mirror: false
       # [boolean=false] do not make holes transparent
@@ -438,7 +441,8 @@ outputs:
       # The default is none
       show_components: none
       # [string|dict] PCB style (colors). An internal name, the name of a JSON file or the style options
-      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
+#v2.1      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
+      style: '/opt/pcbdraw/pcbdraw/styles/jlcpcb-green-hasl.json'
       # [boolean=false] render V-CUTS on the Cmts.User layer
       vcuts: true
       # [string='visible'] [visible,all,none] using visible only the warnings about components in the visible side are generated

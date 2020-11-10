@@ -19,9 +19,9 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: 'recursive'
-    - uses: nerdyscout/kicad-exports@v2.1
+    - uses: nerdyscout/kicad-exports@v2.0
       with:
-        config: config.kibot.yaml
+        config: config.kiplot.yaml
         board: osw.kicad_pcb
         schema: osw.sch
     - uses: github-actions-x/commit@v2.7
