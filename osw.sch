@@ -1832,16 +1832,8 @@ Text Label 750  3000 0    50   ~ 0
 ANT
 NoConn ~ 1000 3800
 NoConn ~ 1000 3700
-Text Label 650  4000 0    50   ~ 0
-GPS_FON
-Wire Wire Line
-	650  4000 1000 4000
-Text Label 3400 4100 0    50   ~ 0
-GPS_FON
 Wire Wire Line
 	3400 4000 3750 4000
-Wire Wire Line
-	3400 4100 3750 4100
 Wire Wire Line
 	4150 5250 4150 5050
 Wire Wire Line
@@ -2312,10 +2304,6 @@ Wire Wire Line
 	1600 2775 600  2775
 Wire Wire Line
 	600  2775 600  4350
-Wire Wire Line
-	2450 4800 2600 4800
-Wire Wire Line
-	2600 4800 2600 4950
 Connection ~ 2450 4800
 Wire Wire Line
 	1300 5325 1900 5325
@@ -2386,4 +2374,9 @@ F 3 "" H 2025 5175 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1700 5175 2025 5175
+Wire Wire Line
+	2450 4800 2600 4800
+Wire Wire Line
+	2600 4800 2600 4950
+NoConn ~ 1000 4000
 $EndSCHEMATC
