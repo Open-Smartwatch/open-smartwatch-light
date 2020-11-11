@@ -963,7 +963,7 @@ F 3 "~" H 8400 1150 50  0001 C CNN
 	1    8400 1150
 	1    0    0    -1  
 $EndComp
-Text Label 5800 1450 0    50   ~ 0
+Text Label 6000 950  2    50   ~ 0
 PIN_LED
 Wire Notes Line
 	8550 2450 8550 500 
@@ -1304,7 +1304,7 @@ $EndComp
 Wire Notes Line
 	8200 4525 8200 5550
 Wire Wire Line
-	5800 1450 6100 1450
+	6000 1450 6100 1450
 Wire Wire Line
 	8400 1250 8400 1300
 Wire Wire Line
@@ -2253,4 +2253,46 @@ Wire Wire Line
 	2750 4125 2925 4125
 Wire Wire Line
 	2750 3325 2750 4125
+$Comp
+L Device:R_Small R?
+U 1 1 5FAF8B20
+P 6000 1200
+F 0 "R?" V 5925 1125 50  0000 L CNN
+F 1 "10k" V 6075 1100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6000 1200 50  0001 C CNN
+F 3 "~" H 6000 1200 50  0001 C CNN
+	1    6000 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 950  6000 1100
+$Comp
+L Device:R_Small R?
+U 1 1 5FC27A03
+P 6000 1875
+F 0 "R?" V 5925 1800 50  0000 L CNN
+F 1 "1M" V 6075 1775 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6000 1875 50  0001 C CNN
+F 3 "~" H 6000 1875 50  0001 C CNN
+	1    6000 1875
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC280D0
+P 6000 2200
+F 0 "#PWR?" H 6000 1950 50  0001 C CNN
+F 1 "GND" H 6005 2027 50  0000 C CNN
+F 2 "" H 6000 2200 50  0001 C CNN
+F 3 "" H 6000 2200 50  0001 C CNN
+	1    6000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2200 6000 1975
+Wire Wire Line
+	6000 1300 6000 1450
+Connection ~ 6000 1450
+Wire Wire Line
+	6000 1450 6000 1775
 $EndSCHEMATC
