@@ -1166,7 +1166,7 @@ U 1 1 60F50791
 P 750 3200
 F 0 "R5" V 650 3200 50  0000 C CNN
 F 1 "0R" V 825 3200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 750 3200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 750 3200 50  0001 C CNN
 F 3 "~" H 750 3200 50  0001 C CNN
 	1    750  3200
 	-1   0    0    1   
@@ -1886,23 +1886,19 @@ F 3 "" H 10300 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10300 4200 10300 4175
-Text Label 9700 3875 0    50   ~ 0
+Text Label 10925 3875 2    50   ~ 0
 D1_P
 Wire Wire Line
 	9700 3875 9900 3875
-Text Label 9700 3675 0    50   ~ 0
-D2_P
 Wire Wire Line
 	9700 3675 9900 3675
 Wire Wire Line
 	8375 3150 8375 3200
 Wire Wire Line
 	8375 3200 8550 3200
-Text Label 10925 3675 2    50   ~ 0
-D2_N
 Wire Wire Line
 	10925 3675 10700 3675
-Text Label 10925 3875 2    50   ~ 0
+Text Label 9700 3875 0    50   ~ 0
 D1_N
 Wire Wire Line
 	10700 3875 10925 3875
@@ -2363,4 +2359,8 @@ F 3 "" H 6175 3100 50  0001 C CNN
 	1    6175 3100
 	1    0    0    -1  
 $EndComp
+Text Label 9700 3675 0    50   ~ 0
+D2_N
+Text Label 10925 3675 2    50   ~ 0
+D2_P
 $EndSCHEMATC
