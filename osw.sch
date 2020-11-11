@@ -236,9 +236,9 @@ F 3 "" H 9950 3100 50  0001 C CNN
 	1    9950 3100
 	1    0    0    -1  
 $EndComp
-Text Label 9375 3500 0    50   ~ 0
+Text Label 9550 3500 2    50   ~ 0
 D1_N
-Text Label 9375 3400 0    50   ~ 0
+Text Label 9550 3400 2    50   ~ 0
 D1_P
 Text Label 10150 2800 0    50   ~ 0
 D2_N
@@ -279,9 +279,9 @@ Wire Wire Line
 Text Label 8450 3100 0    50   ~ 0
 RX
 Wire Wire Line
-	9375 3400 9350 3400
+	9550 3400 9350 3400
 Wire Wire Line
-	9375 3500 9350 3500
+	9550 3500 9350 3500
 $Comp
 L open-Smartwatch:USB-OTG U5
 U 1 1 5F553576
@@ -1062,119 +1062,117 @@ F 3 "" H 2725 2200 50  0001 C CNN
 	1    2725 2200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 975  3800
+NoConn ~ 1000 3500
 Wire Wire Line
-	1325 5100 1225 5100
-Connection ~ 1325 5100
+	1350 4800 1250 4800
+Connection ~ 1350 4800
 Wire Wire Line
-	1325 4950 1325 5100
+	1350 4650 1350 4800
 Wire Wire Line
-	1425 5100 1325 5100
-Connection ~ 1425 5100
+	1450 4800 1350 4800
+Connection ~ 1450 4800
 Wire Wire Line
-	1425 4950 1425 5100
+	1450 4650 1450 4800
 Wire Wire Line
-	1525 5100 1425 5100
-Connection ~ 1525 5100
+	1550 4800 1450 4800
+Connection ~ 1550 4800
 Wire Wire Line
-	1525 4950 1525 5100
+	1550 4650 1550 4800
 Wire Wire Line
-	1625 5100 1525 5100
-Connection ~ 1625 5100
+	1650 4800 1550 4800
+Connection ~ 1650 4800
 Wire Wire Line
-	1625 4950 1625 5100
+	1650 4650 1650 4800
 Wire Wire Line
-	1725 4950 1725 5100
+	1750 4650 1750 4800
 Wire Wire Line
-	1825 5100 1925 5100
-Connection ~ 1825 5100
+	1850 4800 1950 4800
+Connection ~ 1850 4800
 Wire Wire Line
-	1825 4950 1825 5100
+	1850 4650 1850 4800
 Wire Wire Line
-	1925 5100 2025 5100
-Connection ~ 1925 5100
+	1950 4800 2050 4800
+Connection ~ 1950 4800
 Wire Wire Line
-	1725 5100 1825 5100
+	1750 4800 1850 4800
 Wire Wire Line
-	1925 4950 1925 5100
+	1950 4650 1950 4800
 Wire Wire Line
-	2025 5100 2125 5100
-Connection ~ 2025 5100
+	2050 4800 2150 4800
+Connection ~ 2050 4800
 Wire Wire Line
-	2025 4950 2025 5100
+	2050 4650 2050 4800
 Wire Wire Line
-	2125 5100 2225 5100
-Connection ~ 2125 5100
+	2150 4800 2250 4800
+Connection ~ 2150 4800
 Wire Wire Line
-	2125 4950 2125 5100
+	2150 4650 2150 4800
 Wire Wire Line
-	2225 5100 2325 5100
-Connection ~ 2225 5100
+	2250 4800 2350 4800
+Connection ~ 2250 4800
 Wire Wire Line
-	2225 4950 2225 5100
+	2250 4650 2250 4800
 Wire Wire Line
-	2325 5100 2425 5100
-Connection ~ 2325 5100
+	2350 4800 2450 4800
+Connection ~ 2350 4800
 Wire Wire Line
-	2325 4950 2325 5100
-Connection ~ 1725 5100
+	2350 4650 2350 4800
+Connection ~ 1750 4800
 Wire Wire Line
-	2425 5100 2425 4950
+	2450 4800 2450 4650
 Wire Wire Line
-	1225 5100 1125 5100
-Connection ~ 1225 5100
+	1250 4800 1150 4800
+Connection ~ 1250 4800
 Wire Wire Line
-	1225 4950 1225 5100
+	1250 4650 1250 4800
 Wire Wire Line
-	1125 5100 1125 4950
+	1150 4800 1150 4650
 Wire Wire Line
-	1725 5100 1625 5100
-Wire Wire Line
-	1725 5150 1725 5100
+	1750 4800 1650 4800
 $Comp
 L power:GND #PWR033
 U 1 1 5FC0EBDC
-P 1725 5150
-F 0 "#PWR033" H 1725 4900 50  0001 C CNN
-F 1 "GND" H 1730 4977 50  0000 C CNN
-F 2 "" H 1725 5150 50  0001 C CNN
-F 3 "" H 1725 5150 50  0001 C CNN
-	1    1725 5150
+P 2600 4950
+F 0 "#PWR033" H 2600 4700 50  0001 C CNN
+F 1 "GND" H 2605 4777 50  0000 C CNN
+F 2 "" H 2600 4950 50  0001 C CNN
+F 3 "" H 2600 4950 50  0001 C CNN
+	1    2600 4950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 975  4500
-NoConn ~ 2575 3900
-NoConn ~ 2575 3750
-NoConn ~ 2575 4050
-Connection ~ 1575 3075
+NoConn ~ 1000 4200
+NoConn ~ 2600 3600
+NoConn ~ 2600 3450
+NoConn ~ 2600 3750
+Connection ~ 1600 2775
 Wire Wire Line
-	1575 2900 1575 3075
+	1600 2750 1600 2775
 Wire Wire Line
-	1775 3075 1775 3150
+	1800 2775 1800 2850
 Wire Wire Line
-	1575 3075 1775 3075
+	1600 2775 1800 2775
 Wire Wire Line
-	1575 3150 1575 3075
+	1600 2850 1600 2775
 $Comp
 L power:+3V3 #PWR016
 U 1 1 5FBAC2DC
-P 1575 2900
-F 0 "#PWR016" H 1575 2750 50  0001 C CNN
-F 1 "+3V3" H 1590 3073 50  0000 C CNN
-F 2 "" H 1575 2900 50  0001 C CNN
-F 3 "" H 1575 2900 50  0001 C CNN
-	1    1575 2900
+P 1600 2750
+F 0 "#PWR016" H 1600 2600 50  0001 C CNN
+F 1 "+3V3" H 1615 2923 50  0000 C CNN
+F 2 "" H 1600 2750 50  0001 C CNN
+F 3 "" H 1600 2750 50  0001 C CNN
+	1    1600 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L open-Smartwatch:Quectel_L96 U8
 U 1 1 5F525D1D
-P 1775 4050
-F 0 "U8" H 1150 4900 50  0000 C CNN
-F 1 "Quectel_L96" H 2200 4900 50  0000 C CNN
-F 2 "open-Smartwatch:Quectel_L96" H 1525 3550 50  0001 C CNN
-F 3 "https://www.quectel.com/UploadImage/Downlad/Quectel_L96_Hardware_Design_V1.2.pdf" H 1525 3550 50  0001 C CNN
-	1    1775 4050
+P 1800 3750
+F 0 "U8" H 1175 4600 50  0000 C CNN
+F 1 "Quectel_L96" H 2225 4600 50  0000 C CNN
+F 2 "open-Smartwatch:Quectel_L96" H 1550 3250 50  0001 C CNN
+F 3 "https://www.quectel.com/UploadImage/Downlad/Quectel_L96_Hardware_Design_V1.2.pdf" H 1550 3250 50  0001 C CNN
+	1    1800 3750
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1258,31 +1256,31 @@ BATTERY
 $Comp
 L Device:R_Small R5
 U 1 1 60F50791
-P 725 3500
-F 0 "R5" V 625 3500 50  0000 C CNN
-F 1 "0R" V 825 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 725 3500 50  0001 C CNN
-F 3 "~" H 725 3500 50  0001 C CNN
-	1    725  3500
+P 750 3200
+F 0 "R5" V 650 3200 50  0000 C CNN
+F 1 "0R" V 825 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 750 3200 50  0001 C CNN
+F 3 "~" H 750 3200 50  0001 C CNN
+	1    750  3200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	975  3600 875  3600
+	1000 3300 900  3300
 Wire Wire Line
-	875  3600 875  3700
+	900  3300 900  3400
 Wire Wire Line
-	875  3700 725  3700
+	900  3400 750  3400
 Wire Wire Line
-	725  3700 725  3600
+	750  3400 750  3300
 Wire Wire Line
-	975  3450 875  3450
+	1000 3150 900  3150
 Wire Wire Line
-	875  3450 875  3300
+	900  3150 900  3000
 Wire Wire Line
-	875  3300 725  3300
+	900  3000 750  3000
 Wire Wire Line
-	725  3300 725  3400
-Text Notes 575  3150 0    50   ~ 0
+	750  3000 750  3100
+Text Notes 775  2750 0    50   ~ 0
 0 Ohm across\nRFin/RFout for\ninternal ant
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO1
@@ -1413,13 +1411,13 @@ RTC_INT
 Wire Wire Line
 	1700 1550 1800 1550
 Wire Wire Line
-	2575 4250 2875 4250
+	2600 3950 3025 3950
 Wire Wire Line
-	2575 4350 2875 4350
-Text Label 2875 4250 2    50   ~ 0
-GPS_RX
-Text Label 2875 4350 2    50   ~ 0
-GPS_TX
+	2600 4050 3025 4050
+Text Label 3025 3950 2    50   ~ 0
+GPS_RX2V8
+Text Label 3025 4050 2    50   ~ 0
+GPS_TX2V8
 Text Label 2600 6000 2    50   ~ 0
 VOUT
 Wire Wire Line
@@ -1443,20 +1441,20 @@ Wire Wire Line
 	4250 5050 4250 5350
 Text Label 3850 5350 0    50   ~ 0
 BTN2
-Text Label 3400 4200 0    50   ~ 0
-GPS_TX
+Text Label 3325 4200 0    50   ~ 0
+GPS_TX3V3
 Text Label 3400 4000 0    50   ~ 0
 B_MON
 Wire Wire Line
 	3750 4400 3400 4400
 Text Label 5300 4300 2    50   ~ 0
 SD_CS
-Text Label 3400 4300 0    50   ~ 0
-GPS_RX
+Text Label 3325 4300 0    50   ~ 0
+GPS_RX3V3
 Wire Wire Line
-	3750 4300 3400 4300
+	3750 4300 3325 4300
 Wire Wire Line
-	3750 4200 3400 4200
+	3750 4200 3325 4200
 Text Label 3400 3900 0    50   ~ 0
 TFT_RST
 Wire Wire Line
@@ -1619,12 +1617,12 @@ $EndComp
 $Comp
 L Device:C_Small C10
 U 1 1 5F827434
-P 2750 3225
-F 0 "C10" H 2820 3295 50  0000 L CNN
-F 1 "0.1u" H 2790 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2750 3225 50  0001 C CNN
-F 3 "~" H 2750 3225 50  0001 C CNN
-	1    2750 3225
+P 600 4450
+F 0 "C10" H 670 4520 50  0000 L CNN
+F 1 "0.1u" H 640 4380 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 600 4450 50  0001 C CNN
+F 3 "~" H 600 4450 50  0001 C CNN
+	1    600  4450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1830,30 +1828,14 @@ Wire Wire Line
 	4625 1550 4625 2100
 Wire Wire Line
 	2725 1950 2725 2100
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5F5D2386
-P 2425 2750
-F 0 "J3" H 2375 2850 50  0000 L CNN
-F 1 "Conn_01x02" H 2375 2550 50  0000 L CNN
-F 2 "open-Smartwatch:U.FL_Molex_MCRF_73412-0110_Vertical" H 2425 2750 50  0001 C CNN
-F 3 "~" H 2425 2750 50  0001 C CNN
-	1    2425 2750
-	1    0    0    -1  
-$EndComp
-Text Label 2100 2750 0    50   ~ 0
+Text Label 750  3000 0    50   ~ 0
 ANT
-Wire Wire Line
-	2100 2750 2225 2750
-Text Label 725  3300 0    50   ~ 0
-ANT
-NoConn ~ 975  4100
-NoConn ~ 975  4000
-NoConn ~ 2225 2850
-Text Label 625  4300 0    50   ~ 0
+NoConn ~ 1000 3800
+NoConn ~ 1000 3700
+Text Label 650  4000 0    50   ~ 0
 GPS_FON
 Wire Wire Line
-	625  4300 975  4300
+	650  4000 1000 4000
 Text Label 3400 4100 0    50   ~ 0
 GPS_FON
 Wire Wire Line
@@ -2160,18 +2142,6 @@ Wire Wire Line
 Wire Wire Line
 	4625 2100 4750 2100
 Wire Wire Line
-	1775 3075 2750 3075
-Wire Wire Line
-	2750 3075 2750 3125
-Connection ~ 1775 3075
-Wire Wire Line
-	2750 5100 2425 5100
-Connection ~ 2425 5100
-Wire Wire Line
-	2925 4400 2750 4400
-Wire Wire Line
-	2750 4400 2750 5100
-Wire Wire Line
 	3600 2925 3250 2925
 Wire Wire Line
 	3250 2925 3250 3050
@@ -2239,14 +2209,8 @@ Wire Wire Line
 	4600 6600 4750 6600
 NoConn ~ 3750 3500
 NoConn ~ 3750 3400
-NoConn ~ 2575 3450
-NoConn ~ 2575 3600
-Wire Wire Line
-	2925 4125 2925 4400
-Wire Wire Line
-	2750 4125 2925 4125
-Wire Wire Line
-	2750 3325 2750 4125
+NoConn ~ 2600 3150
+NoConn ~ 2600 3300
 $Comp
 L Device:R_Small R21
 U 1 1 5FAF8B20
@@ -2317,26 +2281,109 @@ F 3 "" H 10300 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10300 4200 10300 4175
-Text Label 9875 3875 2    50   ~ 0
+Text Label 9700 3875 0    50   ~ 0
 D1_P
 Wire Wire Line
-	9875 3875 9900 3875
-Text Label 9875 3675 2    50   ~ 0
+	9700 3875 9900 3875
+Text Label 9700 3675 0    50   ~ 0
 D2_P
 Wire Wire Line
-	9875 3675 9900 3675
+	9700 3675 9900 3675
 Wire Wire Line
 	8375 3150 8375 3200
 Wire Wire Line
 	8375 3200 8550 3200
-Text Label 10750 3675 0    50   ~ 0
+Text Label 10925 3675 2    50   ~ 0
 D2_N
 Wire Wire Line
-	10750 3675 10700 3675
-Text Label 10750 3875 0    50   ~ 0
+	10925 3675 10700 3675
+Text Label 10925 3875 2    50   ~ 0
 D1_N
 Wire Wire Line
-	10700 3875 10750 3875
+	10700 3875 10925 3875
 Wire Wire Line
 	9950 3100 10350 3100
+Wire Wire Line
+	1150 4800 600  4800
+Wire Wire Line
+	600  4800 600  4550
+Connection ~ 1150 4800
+Wire Wire Line
+	1600 2775 600  2775
+Wire Wire Line
+	600  2775 600  4350
+Wire Wire Line
+	2450 4800 2600 4800
+Wire Wire Line
+	2600 4800 2600 4950
+Connection ~ 2450 4800
+Wire Wire Line
+	1300 5325 1900 5325
+Wire Wire Line
+	625  5325 1100 5325
+$Comp
+L Device:R_Small R?
+U 1 1 604E5042
+P 1200 5325
+F 0 "R?" V 1125 5350 50  0000 L CNN
+F 1 "1k" V 1125 5225 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1200 5325 50  0001 C CNN
+F 3 "~" H 1200 5325 50  0001 C CNN
+	1    1200 5325
+	0    1    1    0   
+$EndComp
+Text Label 625  5325 0    50   ~ 0
+GPS_TX3V3
+Text Label 1900 5325 2    50   ~ 0
+GPS_TX2V8
+$Comp
+L Device:R_Small R?
+U 1 1 6067B804
+P 1600 5175
+F 0 "R?" V 1525 5275 50  0000 L CNN
+F 1 "5.6k" V 1525 5075 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 5175 50  0001 C CNN
+F 3 "~" H 1600 5175 50  0001 C CNN
+	1    1600 5175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 5050 1425 5050
+Wire Wire Line
+	625  5050 1100 5050
+$Comp
+L Device:R_Small R?
+U 1 1 604A7E21
+P 1200 5050
+F 0 "R?" V 1125 5075 50  0000 L CNN
+F 1 "1k" V 1125 4950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1200 5050 50  0001 C CNN
+F 3 "~" H 1200 5050 50  0001 C CNN
+	1    1200 5050
+	0    1    1    0   
+$EndComp
+Text Label 625  5050 0    50   ~ 0
+GPS_RX3V3
+Text Label 1900 5050 2    50   ~ 0
+GPS_RX2V8
+Wire Wire Line
+	1425 5050 1425 5175
+Wire Wire Line
+	1425 5175 1500 5175
+Connection ~ 1425 5050
+Wire Wire Line
+	1425 5050 1300 5050
+$Comp
+L power:GND #PWR?
+U 1 1 6087E653
+P 2025 5175
+F 0 "#PWR?" H 2025 4925 50  0001 C CNN
+F 1 "GND" H 2030 5002 50  0000 C CNN
+F 2 "" H 2025 5175 50  0001 C CNN
+F 3 "" H 2025 5175 50  0001 C CNN
+	1    2025 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 5175 2025 5175
 $EndSCHEMATC
