@@ -829,7 +829,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 1300 6900 1300
 Wire Wire Line
-	7550 750  7550 950 
+	7550 750  7550 825 
 Wire Wire Line
 	7450 1950 7450 2100
 Wire Wire Line
@@ -866,8 +866,8 @@ $Comp
 L Transistor_FET:2N7002 Q1
 U 1 1 5F61875A
 P 6300 1450
-F 0 "Q1" H 6504 1496 50  0000 L CNN
-F 1 "2N7002" H 6504 1405 50  0000 L CNN
+F 0 "Q1" V 6450 1600 50  0000 L CNN
+F 1 "2N7002" V 6450 1050 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6500 1375 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 6300 1450 50  0001 L CNN
 	1    6300 1450
@@ -1517,8 +1517,8 @@ $Comp
 L Device:C_Small C10
 U 1 1 5F827434
 P 600 4450
-F 0 "C10" H 670 4520 50  0000 L CNN
-F 1 "0.1u" H 640 4380 50  0000 L CNN
+F 0 "C10" V 650 4500 50  0000 L CNN
+F 1 "0.1u" V 650 4225 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 600 4450 50  0001 C CNN
 F 3 "~" H 600 4450 50  0001 C CNN
 	1    600  4450
@@ -1905,14 +1905,14 @@ Wire Wire Line
 Wire Wire Line
 	9950 3100 10350 3100
 Wire Wire Line
-	1150 4800 600  4800
+	1150 4800 900  4800
 Wire Wire Line
 	600  4800 600  4550
 Connection ~ 1150 4800
 Wire Wire Line
 	1600 2775 600  2775
 Wire Wire Line
-	600  2775 600  4350
+	600  2775 600  4150
 Connection ~ 2450 4800
 Wire Wire Line
 	1300 5325 1900 5325
@@ -2363,4 +2363,71 @@ Text Label 9700 3675 0    50   ~ 0
 D2_N
 Text Label 10925 3675 2    50   ~ 0
 D2_P
+$Comp
+L Device:C_Small C22
+U 1 1 5FB6680D
+P 6675 1450
+F 0 "C22" V 6725 1500 50  0000 L CNN
+F 1 "0.1u" V 6725 1225 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6675 1450 50  0001 C CNN
+F 3 "~" H 6675 1450 50  0001 C CNN
+	1    6675 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 825  6675 825 
+Wire Wire Line
+	6675 825  6675 1350
+Connection ~ 7550 825 
+Wire Wire Line
+	7550 825  7550 950 
+Wire Wire Line
+	6675 1550 6675 2100
+Wire Wire Line
+	6675 2100 7450 2100
+Connection ~ 7450 2100
+$Comp
+L Device:C_Small C21
+U 1 1 5FBADDF0
+P 900 4450
+F 0 "C21" V 970 4520 50  0000 L CNN
+F 1 "10p" V 950 4225 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 900 4450 50  0001 C CNN
+F 3 "~" H 900 4450 50  0001 C CNN
+	1    900  4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5FBAD886
+P 750 4450
+F 0 "C20" V 820 4520 50  0000 L CNN
+F 1 "100p" V 800 4225 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 750 4450 50  0001 C CNN
+F 3 "~" H 750 4450 50  0001 C CNN
+	1    750  4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  4350 750  4150
+Wire Wire Line
+	750  4150 600  4150
+Connection ~ 600  4150
+Wire Wire Line
+	600  4150 600  4350
+Wire Wire Line
+	750  4150 900  4150
+Wire Wire Line
+	900  4150 900  4350
+Connection ~ 750  4150
+Wire Wire Line
+	750  4550 750  4800
+Connection ~ 750  4800
+Wire Wire Line
+	750  4800 600  4800
+Wire Wire Line
+	900  4550 900  4800
+Connection ~ 900  4800
+Wire Wire Line
+	900  4800 750  4800
 $EndSCHEMATC
