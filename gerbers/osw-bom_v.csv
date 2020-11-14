@@ -1,4 +1,7 @@
 Reference,Value,Package,Quantity,digikey_pn,mpn,manufacturer,digi-key_pn,manf,manf#
+"Unpolarized capacitor, small symbol",10p,C_0603_1608Metric,1,,,,,,
+"Unpolarized capacitor, small symbol",100p,C_0603_1608Metric,1,,,,,,
+"Unpolarized capacitor, small symbol",0.1u,C_0603_1608Metric,1,,,,,,
 "Unpolarized capacitor, small symbol",0.1u,C_0603_1608Metric,1,,,,,,
 "Unpolarized capacitor, small symbol",0.1u,C_0603_1608Metric,1,,,,,,
 "Unpolarized capacitor, small symbol",0.1u,C_0603_1608Metric,1,,,,,,
@@ -21,7 +24,7 @@ Reference,Value,Package,Quantity,digikey_pn,mpn,manufacturer,digi-key_pn,manf,ma
 "Light emitting diode, small symbol",LED_Green,LED_0805_2012Metric,1,,,,,,
 "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02,PinHeader_1x02_P2.54mm_Vertical,1,,,,,,
 "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23",2N7002,SOT-23,1,,,,,,
-"Resistor, small symbol",0R,R_0603_1608Metric,1,,,,,,
+"Resistor, small symbol",0R,R_0402_1005Metric,1,,,,,,
 "Resistor, small symbol",22,R_0603_1608Metric,1,,,,,,
 "Resistor, small symbol",470R,R_0603_1608Metric,1,,,,,,
 "Resistor, small symbol",470R,R_0603_1608Metric,1,,,,,,
