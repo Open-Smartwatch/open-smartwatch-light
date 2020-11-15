@@ -1,5 +1,5 @@
 Drill report for /github/workspace/osw.kicad_pcb
-Created on Sat Nov 14 11:47:58 2020
+Created on Sun Nov 15 18:33:37 2020
 
 Copper Layer Stackup:
     =============================================================
@@ -12,10 +12,10 @@ Copper Layer Stackup:
 Drill file 'osw-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.40mm  0.016"  (142 holes)
+    T1  0.40mm  0.016"  (209 holes)
     T2  0.75mm  0.030"  (2 holes)  (with 2 slots)
 
-    Total plated holes count 144
+    Total plated holes count 211
 
 
 Drill file 'osw-NPTH.drl' contains
