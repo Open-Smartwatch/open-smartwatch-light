@@ -1,4 +1,4 @@
-18800411627478025
+18803623078252025
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82446,6 +82446,13 @@ WS2812B_data-bridgeable
 12
 4
 footprints
+aisler_15x12mm
+
+
+0
+0
+0
+footprints
 big-switch
 
 
@@ -82480,6 +82487,13 @@ inductor_smd_10.5x10.3x4.0
 0
 2
 2
+footprints
+kicad_11x9mm
+
+
+0
+0
+0
 footprints
 lipo-charger-5v-with-protection-board
 

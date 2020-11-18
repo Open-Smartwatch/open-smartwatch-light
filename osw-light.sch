@@ -390,10 +390,6 @@ Connection ~ 8950 2800
 Wire Wire Line
 	8950 2800 8950 2900
 Wire Notes Line
-	3050 5500 500  5500
-Wire Notes Line
-	500  5500 500  2500
-Wire Notes Line
 	500  2450 500  500 
 Wire Notes Line
 	11100 2500 11100 4450
@@ -765,55 +761,10 @@ F 3 "~" H 7125 4825 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3550 6300 4100 6300
-Text Notes 550  2600 0    50   Italic 10
-GPS
 Text Notes 550  600  0    50   Italic 10
 SENSORS
 Text Notes 550  5650 0    50   Italic 10
 POWER
-NoConn ~ 9675 1925
-Text Label 9875 1775 2    50   ~ 0
-MISO
-Text Label 9925 1325 2    50   ~ 0
-SD_CS
-Text Label 9875 1175 2    50   ~ 0
-MOSI
-Text Label 9875 1025 2    50   ~ 0
-SCK
-Wire Wire Line
-	9675 1775 9875 1775
-Wire Wire Line
-	9675 1325 9925 1325
-Wire Wire Line
-	9675 1175 9875 1175
-NoConn ~ 9675 1475
-NoConn ~ 9675 1625
-Wire Wire Line
-	9675 1025 9875 1025
-Wire Wire Line
-	9275 750  9275 775 
-$Comp
-L power:GND #PWR013
-U 1 1 5FBFE330
-P 9275 2225
-F 0 "#PWR013" H 9275 1975 50  0001 C CNN
-F 1 "GND" H 9280 2052 50  0000 C CNN
-F 2 "" H 9275 2225 50  0001 C CNN
-F 3 "" H 9275 2225 50  0001 C CNN
-	1    9275 2225
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR02
-U 1 1 5FBFDDB2
-P 9275 750
-F 0 "#PWR02" H 9275 600 50  0001 C CNN
-F 1 "+3V3" H 9290 923 50  0000 C CNN
-F 2 "" H 9275 750 50  0001 C CNN
-F 3 "" H 9275 750 50  0001 C CNN
-	1    9275 750 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7550 2100 7450 2100
 Connection ~ 7550 2100
@@ -907,16 +858,6 @@ Wire Notes Line
 	8550 2450 8550 500 
 Wire Notes Line
 	8550 500  5650 500 
-Wire Notes Line
-	8600 2450 10000 2450
-Wire Notes Line
-	10000 2450 10000 500 
-Wire Notes Line
-	10000 500  8600 500 
-Wire Notes Line
-	8600 500  8600 2450
-Text Notes 8650 600  0    50   Italic 10
-SDCARD
 Text Notes 5700 600  0    50   Italic 10
 DISPLAY
 Text Notes 8250 2600 0    50   Italic 10
@@ -989,101 +930,6 @@ F 3 "" H 2725 2200 50  0001 C CNN
 	1    2725 2200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1000 3500
-Wire Wire Line
-	1350 4800 1250 4800
-Connection ~ 1350 4800
-Wire Wire Line
-	1350 4650 1350 4800
-Wire Wire Line
-	1450 4800 1350 4800
-Connection ~ 1450 4800
-Wire Wire Line
-	1450 4650 1450 4800
-Wire Wire Line
-	1550 4800 1450 4800
-Connection ~ 1550 4800
-Wire Wire Line
-	1550 4650 1550 4800
-Wire Wire Line
-	1650 4800 1550 4800
-Connection ~ 1650 4800
-Wire Wire Line
-	1650 4650 1650 4800
-Wire Wire Line
-	1750 4650 1750 4800
-Wire Wire Line
-	1850 4800 1950 4800
-Connection ~ 1850 4800
-Wire Wire Line
-	1850 4650 1850 4800
-Wire Wire Line
-	1950 4800 2050 4800
-Connection ~ 1950 4800
-Wire Wire Line
-	1750 4800 1850 4800
-Wire Wire Line
-	1950 4650 1950 4800
-Wire Wire Line
-	2050 4800 2150 4800
-Connection ~ 2050 4800
-Wire Wire Line
-	2050 4650 2050 4800
-Wire Wire Line
-	2150 4800 2250 4800
-Connection ~ 2150 4800
-Wire Wire Line
-	2150 4650 2150 4800
-Connection ~ 2250 4800
-Wire Wire Line
-	2250 4650 2250 4800
-Connection ~ 1750 4800
-Wire Wire Line
-	2450 4800 2450 4650
-Wire Wire Line
-	1250 4800 1150 4800
-Connection ~ 1250 4800
-Wire Wire Line
-	1250 4650 1250 4800
-Wire Wire Line
-	1150 4800 1150 4650
-Wire Wire Line
-	1750 4800 1650 4800
-$Comp
-L power:GND #PWR033
-U 1 1 5FC0EBDC
-P 2600 4950
-F 0 "#PWR033" H 2600 4700 50  0001 C CNN
-F 1 "GND" H 2605 4777 50  0000 C CNN
-F 2 "" H 2600 4950 50  0001 C CNN
-F 3 "" H 2600 4950 50  0001 C CNN
-	1    2600 4950
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1000 4200
-NoConn ~ 2600 3600
-NoConn ~ 2600 3450
-NoConn ~ 2600 3750
-Connection ~ 1600 2775
-Wire Wire Line
-	1800 2775 1800 2850
-Wire Wire Line
-	1600 2775 1800 2775
-Wire Wire Line
-	1600 2850 1600 2775
-$Comp
-L open-Smartwatch:Quectel_L96 U8
-U 1 1 5F525D1D
-P 1800 3750
-F 0 "U8" H 1175 4600 50  0000 C CNN
-F 1 "Quectel_L96" H 2225 4600 50  0000 C CNN
-F 2 "open-Smartwatch:Quectel_L96" H 1550 3250 50  0001 C CNN
-F 3 "https://www.quectel.com/UploadImage/Downlad/Quectel_L96_Hardware_Design_V1.2.pdf" H 1550 3250 50  0001 C CNN
-	1    1800 3750
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	3050 2500 3050 5500
 $Comp
 L Device:R_Small R6
 U 1 1 60BDE5E3
@@ -1161,35 +1007,6 @@ PULLUPS
 Text Notes 9125 5325 0    50   ~ 0
 BATTERY
 $Comp
-L Device:R_Small R5
-U 1 1 60F50791
-P 750 3200
-F 0 "R5" V 650 3200 50  0000 C CNN
-F 1 "0R" V 825 3200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 750 3200 50  0001 C CNN
-F 3 "~" H 750 3200 50  0001 C CNN
-	1    750  3200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1000 3300 900  3300
-Wire Wire Line
-	900  3300 900  3400
-Wire Wire Line
-	900  3400 750  3400
-Wire Wire Line
-	750  3400 750  3300
-Wire Wire Line
-	1000 3150 900  3150
-Wire Wire Line
-	900  3150 900  3000
-Wire Wire Line
-	900  3000 750  3000
-Wire Wire Line
-	750  3000 750  3100
-Text Notes 775  2750 0    50   ~ 0
-0 Ohm across\nRFin/RFout for\ninternal antenna
-$Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO1
 U 1 1 60F9CDC9
 P 10850 6850
@@ -1215,21 +1032,6 @@ Wire Wire Line
 Connection ~ 1300 6150
 Wire Wire Line
 	7550 1950 7550 2100
-$Comp
-L open-Smartwatch:SD_ebay-uSD-push_push_SMD XS1
-U 1 1 5F551F44
-P 9275 1475
-F 0 "XS1" H 9550 2075 50  0000 R CNN
-F 1 "SD_ebay-uSD-push_push_SMD" V 8925 2025 50  0000 R CNN
-F 2 "open-Smartwatch:Conn_uSDcard" H 9275 1475 10  0001 C CNN
-F 3 "_" H 9275 1475 10  0001 C CNN
-F 4 "_" H 9275 1475 10  0001 C CNN "Manf#"
-F 5 "ebay" H 9275 1475 10  0001 C CNN "Manf"
-	1    9275 1475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9275 2175 9275 2200
 Wire Wire Line
 	7100 1600 6850 1600
 Wire Wire Line
@@ -1313,14 +1115,6 @@ Text Label 1800 1900 1    50   ~ 0
 RTC_INT
 Wire Wire Line
 	1700 1550 1800 1550
-Wire Wire Line
-	2600 3950 3025 3950
-Wire Wire Line
-	2600 4050 3025 4050
-Text Label 3025 3950 2    50   ~ 0
-GPS_RX2V8
-Text Label 3025 4050 2    50   ~ 0
-GPS_TX2V8
 Text Label 3375 5825 2    50   ~ 0
 VCC
 Connection ~ 2650 6300
@@ -1340,20 +1134,10 @@ Wire Wire Line
 	4250 5050 4250 5350
 Text Label 3850 5350 0    50   ~ 0
 BTN2
-Text Label 3325 4200 0    50   ~ 0
-GPS_TX3V3
 Text Label 3400 4000 0    50   ~ 0
 B_MON
 Wire Wire Line
 	3750 4400 3400 4400
-Text Label 5375 4300 2    50   ~ 0
-SD_CS
-Text Label 3325 4300 0    50   ~ 0
-GPS_RX3V3
-Wire Wire Line
-	3750 4300 3325 4300
-Wire Wire Line
-	3750 4200 3325 4200
 Text Label 3400 3900 0    50   ~ 0
 TFT_RST
 Wire Wire Line
@@ -1362,8 +1146,6 @@ Wire Wire Line
 	3750 3800 3400 3800
 Text Label 3400 4400 0    50   ~ 0
 TFT_DC
-Wire Wire Line
-	5050 4300 5375 4300
 Wire Notes Line
 	500  2450 5600 2450
 $Comp
@@ -1472,16 +1254,12 @@ Text Label 5400 4000 2    50   ~ 0
 TFT_CS
 Text Label 5400 3900 2    50   ~ 0
 SCK
-Text Label 5400 3800 2    50   ~ 0
-MISO
 NoConn ~ 5050 4200
 NoConn ~ 5050 4100
 Wire Wire Line
 	5050 4000 5400 4000
 Wire Wire Line
 	5050 3900 5400 3900
-Wire Wire Line
-	5050 3800 5400 3800
 Wire Wire Line
 	5050 3500 5300 3500
 Wire Wire Line
@@ -1511,17 +1289,6 @@ F 1 "0.1u" H 9640 2930 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9600 3000 50  0001 C CNN
 F 3 "~" H 9600 3000 50  0001 C CNN
 	1    9600 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C10
-U 1 1 5F827434
-P 600 4450
-F 0 "C10" V 650 4500 50  0000 L CNN
-F 1 "0.1u" V 650 4225 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 600 4450 50  0001 C CNN
-F 3 "~" H 600 4450 50  0001 C CNN
-	1    600  4450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1566,17 +1333,6 @@ F 1 "0.1u" H 3290 3080 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3250 3150 50  0001 C CNN
 F 3 "~" H 3250 3150 50  0001 C CNN
 	1    3250 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C7
-U 1 1 5F82A534
-P 8725 1000
-F 0 "C7" H 8795 1070 50  0000 L CNN
-F 1 "0.1u" H 8765 930 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8725 1000 50  0001 C CNN
-F 3 "~" H 8725 1000 50  0001 C CNN
-	1    8725 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1638,10 +1394,6 @@ Wire Wire Line
 	4625 1550 4625 2100
 Wire Wire Line
 	2725 1950 2725 2100
-Text Label 750  3000 0    50   ~ 0
-ANT
-NoConn ~ 1000 3800
-NoConn ~ 1000 3700
 Wire Wire Line
 	3400 4000 3750 4000
 Wire Wire Line
@@ -1777,20 +1529,6 @@ Wire Wire Line
 	3250 4500 3475 4500
 Connection ~ 3250 3350
 Connection ~ 3475 4500
-Wire Wire Line
-	8725 900  8725 775 
-Wire Wire Line
-	8725 775  9275 775 
-Connection ~ 9275 775 
-Wire Wire Line
-	9275 775  9275 825 
-Wire Wire Line
-	8725 1100 8725 2200
-Wire Wire Line
-	8725 2200 9275 2200
-Connection ~ 9275 2200
-Wire Wire Line
-	9275 2200 9275 2225
 Wire Notes Line
 	5650 3450 8150 3450
 Wire Notes Line
@@ -1809,13 +1547,9 @@ Wire Notes Line
 	6925 6450 11100 6450
 Wire Notes Line
 	8200 4525 11100 4525
-Wire Notes Line
-	500  2500 3025 2500
 NoConn ~ 2325 1600
 NoConn ~ 3750 3500
 NoConn ~ 3750 3400
-NoConn ~ 2600 3150
-NoConn ~ 2600 3300
 $Comp
 L Device:R_Small R21
 U 1 1 5FAF8B20
@@ -1904,90 +1638,6 @@ Wire Wire Line
 	10700 3875 10925 3875
 Wire Wire Line
 	9950 3100 10350 3100
-Wire Wire Line
-	1150 4800 900  4800
-Wire Wire Line
-	600  4800 600  4550
-Connection ~ 1150 4800
-Wire Wire Line
-	1600 2775 600  2775
-Wire Wire Line
-	600  2775 600  4150
-Connection ~ 2450 4800
-Wire Wire Line
-	1300 5325 1900 5325
-Wire Wire Line
-	625  5325 1100 5325
-$Comp
-L Device:R_Small R3
-U 1 1 604E5042
-P 1200 5325
-F 0 "R3" V 1125 5350 50  0000 L CNN
-F 1 "1k" V 1125 5225 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1200 5325 50  0001 C CNN
-F 3 "~" H 1200 5325 50  0001 C CNN
-	1    1200 5325
-	0    1    1    0   
-$EndComp
-Text Label 625  5325 0    50   ~ 0
-GPS_TX3V3
-Text Label 1900 5325 2    50   ~ 0
-GPS_TX2V8
-$Comp
-L Device:R_Small R12
-U 1 1 6067B804
-P 1600 5175
-F 0 "R12" V 1525 5275 50  0000 L CNN
-F 1 "5.6k" V 1525 5075 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 5175 50  0001 C CNN
-F 3 "~" H 1600 5175 50  0001 C CNN
-	1    1600 5175
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1900 5050 1425 5050
-Wire Wire Line
-	625  5050 1100 5050
-$Comp
-L Device:R_Small R2
-U 1 1 604A7E21
-P 1200 5050
-F 0 "R2" V 1125 5075 50  0000 L CNN
-F 1 "1k" V 1125 4950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1200 5050 50  0001 C CNN
-F 3 "~" H 1200 5050 50  0001 C CNN
-	1    1200 5050
-	0    1    1    0   
-$EndComp
-Text Label 625  5050 0    50   ~ 0
-GPS_RX3V3
-Text Label 1900 5050 2    50   ~ 0
-GPS_RX2V8
-Wire Wire Line
-	1425 5050 1425 5175
-Wire Wire Line
-	1425 5175 1500 5175
-Connection ~ 1425 5050
-Wire Wire Line
-	1425 5050 1300 5050
-$Comp
-L power:GND #PWR01
-U 1 1 6087E653
-P 2025 5175
-F 0 "#PWR01" H 2025 4925 50  0001 C CNN
-F 1 "GND" H 2030 5002 50  0000 C CNN
-F 2 "" H 2025 5175 50  0001 C CNN
-F 3 "" H 2025 5175 50  0001 C CNN
-	1    2025 5175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 5175 2025 5175
-Wire Wire Line
-	2450 4800 2600 4800
-Wire Wire Line
-	2600 4800 2600 4950
-NoConn ~ 1000 4000
 Text Notes 3325 4100 0    50   ~ 0
 GPS_FON
 Wire Wire Line
@@ -2304,10 +1954,6 @@ Text Label 5375 4500 2    50   ~ 0
 PWR2_EN
 Wire Wire Line
 	5375 4500 5050 4500
-Text Label 1600 2650 0    50   ~ 0
-3V3_2
-Wire Wire Line
-	1600 2650 1600 2775
 Text Label 7550 750  0    50   ~ 0
 3V3_2
 Text Label 8400 750  2    50   ~ 0
@@ -2328,13 +1974,6 @@ $EndComp
 Text Label 6700 6700 2    50   ~ 0
 3V3_2
 NoConn ~ 3750 4100
-Wire Wire Line
-	2350 4800 2450 4800
-Wire Wire Line
-	2250 4800 2350 4800
-Connection ~ 2350 4800
-Wire Wire Line
-	2350 4650 2350 4800
 Wire Wire Line
 	6175 2850 6175 3100
 $Comp
@@ -2386,48 +2025,8 @@ Wire Wire Line
 Wire Wire Line
 	6675 2100 7450 2100
 Connection ~ 7450 2100
-$Comp
-L Device:C_Small C21
-U 1 1 5FBADDF0
-P 900 4450
-F 0 "C21" V 970 4520 50  0000 L CNN
-F 1 "10p" V 950 4225 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 900 4450 50  0001 C CNN
-F 3 "~" H 900 4450 50  0001 C CNN
-	1    900  4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C20
-U 1 1 5FBAD886
-P 750 4450
-F 0 "C20" V 820 4520 50  0000 L CNN
-F 1 "100p" V 800 4225 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 750 4450 50  0001 C CNN
-F 3 "~" H 750 4450 50  0001 C CNN
-	1    750  4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	750  4350 750  4150
-Wire Wire Line
-	750  4150 600  4150
-Connection ~ 600  4150
-Wire Wire Line
-	600  4150 600  4350
-Wire Wire Line
-	750  4150 900  4150
-Wire Wire Line
-	900  4150 900  4350
-Connection ~ 750  4150
-Wire Wire Line
-	750  4550 750  4800
-Connection ~ 750  4800
-Wire Wire Line
-	750  4800 600  4800
-Wire Wire Line
-	900  4550 900  4800
-Connection ~ 900  4800
-Wire Wire Line
-	900  4800 750  4800
+NoConn ~ 5050 3800
+NoConn ~ 5050 4300
+NoConn ~ 3750 4200
+NoConn ~ 3750 4300
 $EndSCHEMATC
