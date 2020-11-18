@@ -22,8 +22,8 @@ jobs:
     - uses: nerdyscout/kicad-exports@v2.0
       with:
         config: config.kiplot.yaml
-        board: osw.kicad_pcb
-        schema: osw.sch
+        board: osw-light.kicad_pcb
+        schema: osw-light.sch
     - uses: github-actions-x/commit@v2.7
       if: ${{ success() }}
       with:
