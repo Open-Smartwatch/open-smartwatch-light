@@ -9,11 +9,11 @@ To view/modify the files from this repository, install KiCAD from: [https://kica
 Also, add the following Symbol/Footprint library to KiCAD: [https://github.com/Open-Smartwatch/Kicad-Libraries](https://github.com/Open-Smartwatch/Kicad-Libraries)
 
 ## Schematic
-[![Schematic](docs/img/osw-schematic.svg)](docs/osw-schematic.pdf)
+[![Schematic](docs/img/osw-light-schematic.svg)](docs/osw-schematic.pdf)
 
 ## Plots
-[![front](docs/img/osw-top.svg)](docs/img/osw-top.svg)
-[![bottom](docs/img/osw-bottom.svg)](docs/img/osw-bottom.svg)
+[![front](docs/img/osw-light-top.svg)](docs/img/osw-top.svg)
+[![bottom](docs/img/osw-light-bottom.svg)](docs/img/osw-bottom.svg)
 
 ## BOM
 
