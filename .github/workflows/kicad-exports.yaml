@@ -19,7 +19,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: 'recursive'
-    - uses: nerdyscout/kicad-exports@v2.0
+    - uses: nerdyscout/kicad-exports@v2.2
       with:
         config: config.kiplot.yaml
         board: osw-light.kicad_pcb
@@ -32,4 +32,3 @@ jobs:
         email: 'actions@github.com'
         commit-message: ${{ github.workflow }}
         files: gerbers/* docs/* 
-

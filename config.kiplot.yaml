@@ -26,7 +26,6 @@ outputs:
 #      dnf_filter: [string|list(string)=''] Name of the filter to mark components as not fitted. A short-cut to use for simple cases where a variant is an overkill.
 #      output: [string='%f-%i%v.%x'] filename for the output PDF (%i=schematic %x=pdf). Affected by global options.
 #      variant: [string=''] Board variant to apply. Not fitted components are crossed.
-  
 
   - name: 'print schema'
     comment: "Print schematic (SVG)"
@@ -37,8 +36,6 @@ outputs:
 #      output: [string='%f-%i%v.%x'] filename for the output SVG (%i=schematic %x=svg). Affected by global options.
 #      variant: [string=''] Board variant to apply. Not fitted components are crossed.
   
-
- 
 # GERBERS  
   - name: "https://en.wikipedia.org/wiki/Gerber_format"
     comment: 'gerbers'
@@ -369,7 +366,6 @@ outputs:
       # IBoM option, avoid using in conjunction with KiBot variants/filters
       variants_whitelist: ''
       
-      
 # PLOTS
   # PcbDraw - Beautiful 2D PCB render:
   # Uses configurable colors.
@@ -388,8 +384,7 @@ outputs:
       # [list(string)] list of components to highlight
       # highlight:
       # [list(string)] list of libraries
-#v2.1      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
-      libs: ['/opt/pcbdraw/pcbdraw/lib']
+      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
       # [boolean=false] mirror the board
       mirror: false
       # [boolean=false] do not make holes transparent
@@ -404,8 +399,7 @@ outputs:
       # The default is none
       show_components: none
       # [string|dict] PCB style (colors). An internal name, the name of a JSON file or the style options
-#v2.1      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
-      style: '/opt/pcbdraw/pcbdraw/styles/jlcpcb-green-hasl.json'      
+      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
       # [boolean=false] render V-CUTS on the Cmts.User layer
       vcuts: true
       # [string='visible'] [visible,all,none] using visible only the warnings about components in the visible side are generated
@@ -425,8 +419,7 @@ outputs:
       # [list(string)] list of components to highlight
       # highlight:
       # [list(string)] list of libraries
-#v2.1      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
-      libs: ['/opt/pcbdraw/pcbdraw/lib']
+      libs: ['/usr/share/pcbdraw/footprints/KiCAD-base']
       # [boolean=false] mirror the board
       mirror: false
       # [boolean=false] do not make holes transparent
@@ -441,8 +434,7 @@ outputs:
       # The default is none
       show_components: none
       # [string|dict] PCB style (colors). An internal name, the name of a JSON file or the style options
-#v2.1      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
-      style: '/opt/pcbdraw/pcbdraw/styles/jlcpcb-green-hasl.json'
+      style: '/usr/share/pcbdraw/styles/jlcpcb-green-hasl.json'
       # [boolean=false] render V-CUTS on the Cmts.User layer
       vcuts: true
       # [string='visible'] [visible,all,none] using visible only the warnings about components in the visible side are generated
