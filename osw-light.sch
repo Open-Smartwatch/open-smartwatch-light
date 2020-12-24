@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Open-Smartwatch-Light"
 Date "2020-11-18"
-Rev "1.0"
+Rev "3.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -218,15 +218,15 @@ F 3 "" H 9950 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 9550 3500 2    50   ~ 0
-D1_N
+D_N
 Text Label 9550 3400 2    50   ~ 0
-D1_P
+D_P
 Text Label 10150 2800 0    50   ~ 0
-D2_N
+D_N
 Wire Wire Line
 	10150 2900 10350 2900
 Text Label 10150 2900 0    50   ~ 0
-D2_P
+D_P
 Wire Wire Line
 	8375 2850 8375 2950
 $Comp
@@ -885,20 +885,6 @@ Wire Wire Line
 Text Label 2175 1350 0    50   ~ 0
 SCL
 $Comp
-L open-Smartwatch:BMA400 U2
-U 1 1 5F6C61F2
-P 2825 1450
-F 0 "U2" H 2425 1950 50  0000 L CNN
-F 1 "BMA400" H 2975 1000 50  0000 L CNN
-F 2 "open-Smartwatch:LGA-12_2x2mm_P0.5mm" H 3825 1000 50  0001 C CIN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMA400-DS000.pdf" H 2825 1450 50  0001 C CNN
-F 4 "828-1081-1-ND" H 3335 905 50  0001 C CNN "DigiKey_PN"
-F 5 "Bosch Sensortec" H 3315 830 50  0001 C CNN "Manufacturer"
-F 6 "BMA400" H 3150 745 50  0001 C CNN "MPN"
-	1    2825 1450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR05
 U 1 1 5F6D0321
 P 2925 800
@@ -915,8 +901,6 @@ Wire Wire Line
 	2175 1350 2325 1350
 Wire Wire Line
 	2175 1200 2325 1200
-Wire Wire Line
-	2925 1950 2925 2100
 Text Label 2175 1200 0    50   ~ 0
 SDA
 $Comp
@@ -1161,17 +1145,6 @@ F 3 "" H 3600 2850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3600 3200 3600 2925
-$Comp
-L open-Smartwatch:ttgo-32-micro U7
-U 1 1 5F52BDFD
-P 4400 3800
-F 0 "U7" H 4000 4650 50  0000 C CNN
-F 1 "ttgo-32-micro" H 4550 4650 50  0000 C CNN
-F 2 "open-Smartwatch:ttgo-32-micro" H 4000 4400 50  0001 C CNN
-F 3 "" H 4000 4400 50  0001 C CNN
-	1    4400 3800
-	1    0    0    -1  
-$EndComp
 Text Label 3850 5250 0    50   ~ 0
 PIN_LED
 Wire Wire Line
@@ -1384,16 +1357,14 @@ Wire Wire Line
 	4625 1450 4575 1450
 Wire Wire Line
 	4575 1550 4625 1550
-Text Notes 4250 1925 0    50   ~ 0
+Text Notes 4250 2075 0    50   ~ 0
 I2C addr\n0x76
-Text Notes 1325 2025 0    50   ~ 0
+Text Notes 1350 2075 0    50   ~ 0
 I2C addr\n0x68
 Text Notes 3000 2100 0    50   ~ 0
 I2C addr\n0x14
 Wire Wire Line
 	4625 1550 4625 2100
-Wire Wire Line
-	2725 1950 2725 2100
 Wire Wire Line
 	3400 4000 3750 4000
 Wire Wire Line
@@ -1547,7 +1518,6 @@ Wire Notes Line
 	6925 6450 11100 6450
 Wire Notes Line
 	8200 4525 11100 4525
-NoConn ~ 2325 1600
 NoConn ~ 3750 3500
 NoConn ~ 3750 3400
 $Comp
@@ -1592,50 +1562,10 @@ Wire Wire Line
 Connection ~ 6000 1450
 Wire Wire Line
 	6000 1450 6000 1775
-$Comp
-L Power_Protection:USBLC6-2SC6 U12
-U 1 1 5FCC4A82
-P 10300 3775
-F 0 "U12" H 10075 4125 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 10625 3425 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 10300 3275 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 10500 4125 50  0001 C CNN
-	1    10300 3775
-	1    0    0    -1  
-$EndComp
-Text Label 10300 3300 2    50   ~ 0
-VBUS
-Wire Wire Line
-	10300 3300 10300 3375
-$Comp
-L power:GND #PWR0102
-U 1 1 5FE3CEB4
-P 10300 4200
-F 0 "#PWR0102" H 10300 3950 50  0001 C CNN
-F 1 "GND" H 10350 4050 50  0000 R CNN
-F 2 "" H 10300 4200 50  0001 C CNN
-F 3 "" H 10300 4200 50  0001 C CNN
-	1    10300 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 4200 10300 4175
-Text Label 10925 3875 2    50   ~ 0
-D1_P
-Wire Wire Line
-	9700 3875 9900 3875
-Wire Wire Line
-	9700 3675 9900 3675
 Wire Wire Line
 	8375 3150 8375 3200
 Wire Wire Line
 	8375 3200 8550 3200
-Wire Wire Line
-	10925 3675 10700 3675
-Text Label 9700 3875 0    50   ~ 0
-D1_N
-Wire Wire Line
-	10700 3875 10925 3875
 Wire Wire Line
 	9950 3100 10350 3100
 Text Notes 3325 4100 0    50   ~ 0
@@ -1808,17 +1738,6 @@ F 3 "~" H 4950 6975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R20
-U 1 1 60FE8866
-P 5125 6975
-F 0 "R20" V 5200 7000 50  0000 L CNN
-F 1 "2.2K" V 5200 6775 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5125 6975 50  0001 C CNN
-F 3 "~" H 5125 6975 50  0001 C CNN
-	1    5125 6975
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C17
 U 1 1 60FE886C
 P 6275 6950
@@ -1862,8 +1781,6 @@ Wire Wire Line
 Connection ~ 4775 6800
 Wire Wire Line
 	4950 6800 5125 6800
-Wire Wire Line
-	5125 6800 5125 6875
 Connection ~ 4950 6800
 Wire Wire Line
 	5125 6800 5450 6800
@@ -1906,15 +1823,6 @@ Wire Wire Line
 	5375 6950 5450 6950
 Wire Wire Line
 	5450 7100 5125 7100
-Wire Wire Line
-	5125 7100 5125 7075
-Wire Wire Line
-	5125 7100 5125 7325
-Wire Wire Line
-	5125 7325 5500 7325
-Connection ~ 5125 7100
-Text Label 5500 7325 2    50   ~ 0
-PWR2_EN
 $Comp
 L power:GND #PWR019
 U 1 1 60FE88A3
@@ -1950,10 +1858,6 @@ F 3 "" H 6700 5775 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5125 5875 5125 6175
-Text Label 5375 4500 2    50   ~ 0
-PWR2_EN
-Wire Wire Line
-	5375 4500 5050 4500
 Text Label 7550 750  0    50   ~ 0
 3V3_2
 Text Label 8400 750  2    50   ~ 0
@@ -1998,10 +1902,6 @@ F 3 "" H 6175 3100 50  0001 C CNN
 	1    6175 3100
 	1    0    0    -1  
 $EndComp
-Text Label 9700 3675 0    50   ~ 0
-D2_N
-Text Label 10925 3675 2    50   ~ 0
-D2_P
 $Comp
 L Device:C_Small C22
 U 1 1 5FB6680D
@@ -2027,6 +1927,44 @@ Wire Wire Line
 Connection ~ 7450 2100
 NoConn ~ 5050 3800
 NoConn ~ 5050 4300
-NoConn ~ 3750 4200
 NoConn ~ 3750 4300
+$Comp
+L open-Smartwatch:ttgo-32-micro U7
+U 1 1 5F52BDFD
+P 4400 3800
+F 0 "U7" H 4000 4650 50  0000 C CNN
+F 1 "ttgo-32-micro" H 4550 4650 50  0000 C CNN
+F 2 "open-Smartwatch:ttgo-32-micro" H 4000 4400 50  0001 C CNN
+F 3 "" H 4000 4400 50  0001 C CNN
+	1    4400 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 6800 5125 7100
+NoConn ~ 3750 4200
+NoConn ~ 5050 4500
+Wire Wire Line
+	2725 1950 2725 2100
+Wire Wire Line
+	2925 1950 2925 2100
+$Comp
+L open-Smartwatch:BMA400 U2
+U 1 1 5F6C61F2
+P 2825 1450
+F 0 "U2" H 2425 1950 50  0000 L CNN
+F 1 "BMA400" H 2975 1000 50  0000 L CNN
+F 2 "open-Smartwatch:LGA-12_2x2mm_P0.5mm" H 3825 1000 50  0001 C CIN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMA400-DS000.pdf" H 2825 1450 50  0001 C CNN
+F 4 "828-1081-1-ND" H 3335 905 50  0001 C CNN "DigiKey_PN"
+F 5 "Bosch Sensortec" H 3315 830 50  0001 C CNN "Manufacturer"
+F 6 "BMA400" H 3150 745 50  0001 C CNN "MPN"
+	1    2825 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2725 2100 2250 2100
+Wire Wire Line
+	2250 2100 2250 1600
+Wire Wire Line
+	2250 1600 2325 1600
 $EndSCHEMATC
