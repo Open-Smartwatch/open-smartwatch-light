@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Open-Smartwatch-Light"
-Date "2020-11-18"
-Rev "3.0"
+Date "2021-01-03"
+Rev "3.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -274,64 +274,12 @@ F 3 "" H 10600 2700 60  0001 C CNN
 	1    10600 2700
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	4175 1800 4175 1750
-Wire Wire Line
-	4375 800  4375 850 
-$Comp
-L power:+3V3 #PWR06
-U 1 1 5F71770B
-P 4375 800
-F 0 "#PWR06" H 4375 650 50  0001 C CNN
-F 1 "+3V3" H 4390 973 50  0000 C CNN
-F 2 "" H 4375 800 50  0001 C CNN
-F 3 "" H 4375 800 50  0001 C CNN
-	1    4375 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L open-Smartwatch:BMP280 U3
-U 1 1 5F716A88
-P 4275 1450
-F 0 "U3" H 3975 1800 50  0000 L CNN
-F 1 "BMP280" H 4250 1200 50  0000 L CNN
-F 2 "open-Smartwatch:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering" H 4275 750 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf" H 4275 1450 50  0001 C CNN
-	1    4275 1450
-	1    0    0    -1  
-$EndComp
 NoConn ~ 10350 3000
 NoConn ~ 8550 3900
 Wire Wire Line
 	10350 2800 10150 2800
 NoConn ~ 700  1650
 NoConn ~ 1700 1250
-Text Label 3725 1250 0    50   ~ 0
-SCL
-Wire Wire Line
-	3725 1250 3875 1250
-Text Label 3725 1350 0    50   ~ 0
-SDA
-Wire Wire Line
-	3725 1350 3875 1350
-Wire Wire Line
-	4075 2200 4075 2100
-$Comp
-L power:GND #PWR010
-U 1 1 5F72B249
-P 4075 2200
-F 0 "#PWR010" H 4075 1950 50  0001 C CNN
-F 1 "GND" H 4080 2027 50  0000 C CNN
-F 2 "" H 4075 2200 50  0001 C CNN
-F 3 "" H 4075 2200 50  0001 C CNN
-	1    4075 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4075 1800 4175 1800
-Connection ~ 4075 1800
-Wire Wire Line
-	4075 1800 4075 1750
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5FA4BA83
@@ -1025,7 +973,7 @@ L Device:R_Small R16
 U 1 1 5F7492F9
 P 5350 1250
 F 0 "R16" V 5275 1175 50  0000 L CNN
-F 1 "1M" V 5425 1175 50  0000 L CNN
+F 1 "200k" V 5425 1175 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5350 1250 50  0001 C CNN
 F 3 "~" H 5350 1250 50  0001 C CNN
 	1    5350 1250
@@ -1036,7 +984,7 @@ L Device:R_Small R17
 U 1 1 5F749989
 P 5350 1650
 F 0 "R17" V 5275 1575 50  0000 L CNN
-F 1 "220k" V 5425 1550 50  0000 L CNN
+F 1 "10k" V 5425 1550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5350 1650 50  0001 C CNN
 F 3 "~" H 5350 1650 50  0001 C CNN
 	1    5350 1650
@@ -1118,8 +1066,6 @@ Wire Wire Line
 	4250 5050 4250 5350
 Text Label 3850 5350 0    50   ~ 0
 BTN2
-Text Label 3400 4000 0    50   ~ 0
-B_MON
 Wire Wire Line
 	3750 4400 3400 4400
 Text Label 3400 3900 0    50   ~ 0
@@ -1276,17 +1222,6 @@ F 3 "~" H 1950 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C12
-U 1 1 5F828FE0
-P 4750 1000
-F 0 "C12" H 4820 1070 50  0000 L CNN
-F 1 "0.1u" H 4790 930 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4750 1000 50  0001 C CNN
-F 3 "~" H 4750 1000 50  0001 C CNN
-	1    4750 1000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C13
 U 1 1 5F8293A4
 P 3600 1000
@@ -1353,20 +1288,10 @@ Wire Wire Line
 	3375 850  3375 1200
 Wire Wire Line
 	3375 1200 3325 1200
-Wire Wire Line
-	4625 1450 4575 1450
-Wire Wire Line
-	4575 1550 4625 1550
-Text Notes 4250 2075 0    50   ~ 0
-I2C addr\n0x76
 Text Notes 1350 2075 0    50   ~ 0
 I2C addr\n0x68
 Text Notes 3000 2100 0    50   ~ 0
 I2C addr\n0x14
-Wire Wire Line
-	4625 1550 4625 2100
-Wire Wire Line
-	3400 4000 3750 4000
 Wire Wire Line
 	4150 5250 4150 5050
 Wire Wire Line
@@ -1454,44 +1379,12 @@ Connection ~ 2725 2100
 Wire Wire Line
 	2725 2100 2725 2200
 Wire Wire Line
-	4075 2100 4625 2100
-Connection ~ 4075 2100
-Wire Wire Line
-	4075 2100 4075 1800
-Connection ~ 4625 2100
-Wire Wire Line
-	4375 850  4625 850 
-Wire Wire Line
-	4750 850  4750 900 
-Connection ~ 4375 850 
-Wire Wire Line
-	4375 850  4375 1050
-Wire Wire Line
-	4275 850  4375 850 
-Wire Wire Line
-	4275 850  4275 1050
-Wire Wire Line
-	4625 850  4625 1450
-Connection ~ 4625 850 
-Wire Wire Line
-	4625 850  4750 850 
-Wire Wire Line
-	4750 1100 4750 2100
-Wire Wire Line
-	4625 2100 4750 2100
-Wire Wire Line
 	3600 2925 3250 2925
 Wire Wire Line
 	3250 2925 3250 3050
 Connection ~ 3600 2925
 Wire Wire Line
 	3600 2925 3600 2850
-Wire Wire Line
-	3750 3100 3500 3100
-Wire Wire Line
-	3500 3100 3500 3350
-Wire Wire Line
-	3500 3350 3250 3350
 Wire Wire Line
 	3250 3350 3250 3250
 Wire Wire Line
@@ -1519,7 +1412,6 @@ Wire Notes Line
 Wire Notes Line
 	8200 4525 11100 4525
 NoConn ~ 3750 3500
-NoConn ~ 3750 3400
 $Comp
 L Device:R_Small R21
 U 1 1 5FAF8B20
@@ -1967,4 +1859,15 @@ Wire Wire Line
 	2250 2100 2250 1600
 Wire Wire Line
 	2250 1600 2325 1600
+Wire Wire Line
+	3400 4000 3750 4000
+NoConn ~ 3750 3400
+Wire Wire Line
+	3500 3350 3250 3350
+Wire Wire Line
+	3750 3100 3500 3100
+Wire Wire Line
+	3500 3100 3500 3350
+Text Label 3400 4000 0    50   ~ 0
+B_MON
 $EndSCHEMATC
