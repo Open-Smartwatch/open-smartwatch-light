@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Open-Smartwatch-Light"
-Date "2021-01-03"
-Rev "3.1"
+Date "2021-01-17"
+Rev "3.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1471,7 +1471,7 @@ L Device:R_Small R19
 U 1 1 5F5C8B1C
 P 2650 6050
 F 0 "R19" H 2450 6125 50  0000 L CNN
-F 1 "2.2K" H 2425 6025 50  0000 L CNN
+F 1 "220k" H 2425 6025 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2650 6050 50  0001 C CNN
 F 3 "~" H 2650 6050 50  0001 C CNN
 	1    2650 6050
