@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Open-Smartwatch-Light"
-Date "2021-01-17"
-Rev "3.2"
+Date "2021-02-18"
+Rev "3.3"
 Comp ""
 Comment1 ""
 Comment2 ""
