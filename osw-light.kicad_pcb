@@ -3251,7 +3251,7 @@
   (gr_line (start 59.69 101.6) (end 59.69 93.599) (layer Dwgs.User) (width 0.12))
   (gr_line (start 76.2 76.2) (end 76.2 127) (layer Dwgs.User) (width 0.05))
   (gr_line (start 50.8 101.6) (end 101.6 101.6) (layer Dwgs.User) (width 0.05))
-  (gr_text "V 3.3" (at 61.214 106.299) (layer F.SilkS)
+  (gr_text "V 3.3b" (at 61.214 106.299) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text open-smartwatch.github.io (at 76.4413 112.8522) (layer B.SilkS)
